@@ -1,76 +1,31 @@
 // components/popups/CurrencyLanguagePopup.jsx
-import React, { useState } from 'react';
-import McdPopupPage from '../../layouts/McdPopupPage';
-import { useApp } from '../../../contexts/AppContext';
-
-
+import React, { useState } from "react";
+import McdPopupPage from "../../layouts/McdPopupPage";
+import { useApp } from "../../../contexts/AppContext";
 
 const TurnoverInfoPopup = ({
   show = false,
   onClose,
   title = "Currency and Language",
-//   currencies = defaultCurrencies,
+  //   currencies = defaultCurrencies,
   onCurrencyChange,
   onLanguageChange,
   initialCurrency = "BDT",
   initialLanguage = "English",
-  showFlags = true
+  showFlags = true,
 }) => {
   const [selectedCurrency, setSelectedCurrency] = useState(initialCurrency);
   const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
   const { updateSettings } = useApp();
 
-  const defaultCurrencies = [
-    { 
-      code: "BDT", 
-      symbol: "৳", 
-      flag: "https://img.s628b.com/sb/h5/assets/images/flag/BD.png?v=1760412521693", 
-      languages: ["বাংলা", "English"] 
-    },
-    { 
-      code: "INR", 
-      symbol: "₹", 
-      flag: "https://img.s628b.com/sb/h5/assets/images/flag/IN.png?v=1760412521693", 
-      languages: ["English", "हिंदी"] 
-    },
-    { 
-      code: "USD", 
-      symbol: "$", 
-      flag: "https://img.s628b.com/sb/h5/assets/images/flag/US.png?v=1760412521693", 
-      languages: ["English"] 
-    },
-    { 
-      code: "PKR", 
-      symbol: "₨", 
-      flag: "https://img.s628b.com/sb/h5/assets/images/flag/PK.png?v=1760412521693", 
-      languages: ["English"] 
-    }
-  ];
-
-  const handleCurrencySelect = (currency) => {
-    setSelectedCurrency(currency.code);
-    updateSettings({ currency: currency.code });
-    
-    if (onCurrencyChange) {
-      onCurrencyChange(currency);
-      
-    }
+  const handleCurrencyChange = (currency) => {
+    setSelectedCurrency(currency);
+    onCurrencyChange(currency);
   };
 
-  const handleLanguageSelect = (currencyCode, language) => {
-    setSelectedLanguage(language);
-    updateSettings({ language });
-    if (onLanguageChange) {
-      onLanguageChange({
-        currencyCode,
-        language
-      });
-    }
-  };
 
-  const isLanguageSelected = (currencyCode, language) => {
-    return selectedCurrency === currencyCode && selectedLanguage === language;
-  };
+
+
 
   return (
     <McdPopupPage
@@ -80,79 +35,69 @@ const TurnoverInfoPopup = ({
       size="medium"
       popupClass="pop-language"
     >
-      <div className="pop-title">
-        <h3>{title}</h3>
-      </div>
-      
-      <div className="pop-inner content-style">
-        <ul className="language-list">
-          {(defaultCurrencies).map((currency, index) => (
-            <li key={`${currency.code}-${index}`} className="language-item">
-              <div 
-                className="left-language-area"
-                onClick={() => handleCurrencySelect(currency)}
-              >
-                {showFlags && (
-                  <img
-                    src={currency.flag}
-                    alt={currency.code}
-                    className="currency-flag"
-                    loading="lazy"
-                    width={24}
-                    height={16}
-                  />
-                )}
-                <p className="currency-info">
-                  <span className="currency-symbol">{currency.symbol}</span> 
-                  {currency.code}
-                </p>
-              </div>
-              
-              <div className="right-language-area">
-                {currency.languages.map((language, langIndex) => (
-                  <div 
-                    key={`${currency.code}-${language}-${langIndex}`}
-                    className="radio-box"
-                  >
-                    <input
-                      type="radio"
-                      name="language"
-                      id={`${currency.code}${langIndex}`}
-                      checked={isLanguageSelected(currency.code, language)}
-                      onChange={() => handleLanguageSelect(currency.code, language)}
-                      onClick={onClose}
-                      className="language-radio"
-                    />
-                    <label 
-                      htmlFor={`${currency.code}${langIndex}`}
-                      className="language-label"
-                    >
-                      {language}
-                    </label>
-                  </div>
-                ))}
-              </div>
-            </li>
-          ))}
-        </ul>
-        
-        {/* <div style={{ padding: '20px', textAlign: 'center', borderTop: '1px solid #f0f0f0', marginTop: '20px' }}>
-          <button
-            onClick={onClose}
+      <div className="pop-wrap pop-check ng-trigger ng-trigger-popWrapTriggerAni show ani">
+        <button className="btn-close" onClick={onClose}>
+          <span
+            className="item-icon"
             style={{
-              padding: '12px 32px',
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-              color: 'white',
-              border: 'none',
-              borderRadius: '6px',
-              cursor: 'pointer',
-              fontSize: '16px',
-              fontWeight: '500'
+              backgroundImage:
+                'url("https://img.s628b.com/sb/h5/assets/images/icon-set/icon-cross-type01.svg?v=1761636564965")',
             }}
-          >
-            Confirm Selection
-          </button>
-        </div> */}
+          ></span>
+        </button>
+
+        <div className="pop-title">
+          <h3>{turnover.title}</h3>
+        </div>
+
+        <div className="pop-inner content-style">
+          <div className="form-wrap">
+            <div className="arrow" style={{ opacity: 0.8 }}>
+              <span
+                className="item-icon"
+                style={{
+                  backgroundImage:
+                    'url("https://img.s628b.com/sb/h5/assets/images/icon-set/icon-arrow-type01.svg?v=1761636564965")',
+                }}
+              ></span>
+            </div>
+
+            <div className="form-wrap-col">
+              <div>Transaction Amount</div>
+              <div>{turnover.transactionAmount}</div>
+            </div>
+
+            <div className="form-wrap-col">
+              <div>Bonus</div>
+              <div>{turnover.bonus}</div>
+            </div>
+
+            <div className="form-wrap-col">
+              <div>Turnover Requirement</div>
+              <div>{turnover.turnoverRequirement}</div>
+            </div>
+
+            <div className="form-wrap-col">
+              <div>Turnover Completed</div>
+              <div>{turnover.turnoverCompleted}</div>
+            </div>
+
+            <div className="form-wrap-col">
+              <div>Completed Ratio</div>
+              <div>{turnover.completedRatio}</div>
+            </div>
+
+            <div className="form-wrap-col">
+              <div>Turnover Create Time</div>
+              <div>{turnover.createTime}</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="pop-bg ng-trigger ng-trigger-popBgTriggerAni"
+          style={{ display: "block" }}
+        ></div>
       </div>
     </McdPopupPage>
   );

@@ -111,7 +111,7 @@ code {
     --referral-partner-details-form-status-user-id: #ffffff
 }
 
-mcd-referral-bonus-goals-detail {
+-detail {
     --referral-partner-bonus-goals-detail-bg: #123356;
     --referral-partner-reward-pop-list-bg: transparent;
     --referral-partner-reward-pop-list-txt: #222222
@@ -2765,41 +2765,41 @@ html.is-desktop .nav-category {
     color: var(--referral-partner-challenge-bonus-txt-strong, #4574a8)
 }
 
-mcd-referral-bonus-terms-conditions,mcd-referral-bonus-goals,mcd-referral-bonus-period-info,mcd-requirement,mcd-contact-info,mcd-bonus-received-billboard,mcd-leaderboard,mcd-total-issued-bonuses,mcd-income-calculator,mcd-commission-info,mcd-period-revenue-goals,mcd-can-receive-bonus,mcd-dashboard,mcd-received-bonus-record,mcd-invitation-link {
+/* ,,,,,,,,,,,,,, {
     font-size: var(--referral-partner-txt-font-size, 3.7333333333vw)
-}
+} */
 
-mcd-referral-bonus-terms-conditions h2,mcd-referral-bonus-goals h2,mcd-referral-bonus-period-info h2,mcd-requirement h2,mcd-contact-info h2,mcd-bonus-received-billboard h2,mcd-leaderboard h2,mcd-total-issued-bonuses h2,mcd-income-calculator h2,mcd-commission-info h2,mcd-period-revenue-goals h2,mcd-can-receive-bonus h2,mcd-dashboard h2,mcd-received-bonus-record h2,mcd-invitation-link h2,mcd-referral-bonus-terms-conditions h2 span,mcd-referral-bonus-goals h2 span,mcd-referral-bonus-period-info h2 span,mcd-requirement h2 span,mcd-contact-info h2 span,mcd-bonus-received-billboard h2 span,mcd-leaderboard h2 span,mcd-total-issued-bonuses h2 span,mcd-income-calculator h2 span,mcd-commission-info h2 span,mcd-period-revenue-goals h2 span,mcd-can-receive-bonus h2 span,mcd-dashboard h2 span,mcd-received-bonus-record h2 span,mcd-invitation-link h2 span {
+ h2, h2,h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2 span, h2 span,h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span {
     font-size: var(--referral-partner-h2-font-size, 3.7333333333vw);
     color: var(--referral-partner-sub-title, #ffffff)
 }
 
-mcd-referral-bonus-terms-conditions div,mcd-referral-bonus-goals div,mcd-referral-bonus-period-info div,mcd-requirement div,mcd-contact-info div,mcd-bonus-received-billboard div,mcd-leaderboard div,mcd-total-issued-bonuses div,mcd-income-calculator div,mcd-commission-info div,mcd-period-revenue-goals div,mcd-can-receive-bonus div,mcd-dashboard div,mcd-received-bonus-record div,mcd-invitation-link div,mcd-referral-bonus-terms-conditions p,mcd-referral-bonus-goals p,mcd-referral-bonus-period-info p,mcd-requirement p,mcd-contact-info p,mcd-bonus-received-billboard p,mcd-leaderboard p,mcd-total-issued-bonuses p,mcd-income-calculator p,mcd-commission-info p,mcd-period-revenue-goals p,mcd-can-receive-bonus p,mcd-dashboard p,mcd-received-bonus-record p,mcd-invitation-link p {
+ div, div,div, div, div, div, div, div, div, div, div, div, div, div, div, p, p,p, p, p, p, p, p, p, p, p, p, p, p, p {
     font-size: var(--referral-partner-p-font-size, 3.7333333333vw)
 }
 
-mcd-referral-bonus-terms-conditions p,mcd-referral-bonus-goals p,mcd-referral-bonus-period-info p,mcd-requirement p,mcd-contact-info p,mcd-bonus-received-billboard p,mcd-leaderboard p,mcd-total-issued-bonuses p,mcd-income-calculator p,mcd-commission-info p,mcd-period-revenue-goals p,mcd-can-receive-bonus p,mcd-dashboard p,mcd-received-bonus-record p,mcd-invitation-link p {
+ p, p,p, p, p, p, p, p, p, p, p, p, p, p, p {
     margin: 2.1333333333vw 0
 }
 
-mcd-referral-bonus-terms-conditions span,mcd-referral-bonus-goals span,mcd-referral-bonus-period-info span,mcd-requirement span,mcd-contact-info span,mcd-bonus-received-billboard span,mcd-leaderboard span,mcd-total-issued-bonuses span,mcd-income-calculator span,mcd-commission-info span,mcd-period-revenue-goals span,mcd-can-receive-bonus span,mcd-dashboard span,mcd-received-bonus-record span,mcd-invitation-link span {
+ span, span,span, span, span, span, span, span, span, span, span, span, span, span, span {
     color: var(--referral-partner-txt, rgba(255, 255, 255, .4))
 }
 
-mcd-referral-bonus-terms-conditions i,mcd-referral-bonus-goals i,mcd-referral-bonus-period-info i,mcd-requirement i,mcd-contact-info i,mcd-bonus-received-billboard i,mcd-leaderboard i,mcd-total-issued-bonuses i,mcd-income-calculator i,mcd-commission-info i,mcd-period-revenue-goals i,mcd-can-receive-bonus i,mcd-dashboard i,mcd-received-bonus-record i,mcd-invitation-link i,mcd-referral-bonus-terms-conditions a,mcd-referral-bonus-goals a,mcd-referral-bonus-period-info a,mcd-requirement a,mcd-contact-info a,mcd-bonus-received-billboard a,mcd-leaderboard a,mcd-total-issued-bonuses a,mcd-income-calculator a,mcd-commission-info a,mcd-period-revenue-goals a,mcd-can-receive-bonus a,mcd-dashboard a,mcd-received-bonus-record a,mcd-invitation-link a,mcd-referral-bonus-terms-conditions strong,mcd-referral-bonus-goals strong,mcd-referral-bonus-period-info strong,mcd-requirement strong,mcd-contact-info strong,mcd-bonus-received-billboard strong,mcd-leaderboard strong,mcd-total-issued-bonuses strong,mcd-income-calculator strong,mcd-commission-info strong,mcd-period-revenue-goals strong,mcd-can-receive-bonus strong,mcd-dashboard strong,mcd-received-bonus-record strong,mcd-invitation-link strong {
+ i, i,i, i, i, i, i, i, i, i, i, i, i, i, i, a, a,a, a, a, a, a, a, a, a, a, a, a, a, a, strong, strong,strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong {
     color: var(--referral-partner-txt-strong, #4574a8)
 }
 
-mcd-referral-bonus-terms-conditions strong,mcd-referral-bonus-goals strong,mcd-referral-bonus-period-info strong,mcd-requirement strong,mcd-contact-info strong,mcd-bonus-received-billboard strong,mcd-leaderboard strong,mcd-total-issued-bonuses strong,mcd-income-calculator strong,mcd-commission-info strong,mcd-period-revenue-goals strong,mcd-can-receive-bonus strong,mcd-dashboard strong,mcd-received-bonus-record strong,mcd-invitation-link strong {
+ strong, strong,strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong {
     font-weight: 700
 }
 
-mcd-referral-bonus-terms-conditions a,mcd-referral-bonus-goals a,mcd-referral-bonus-period-info a,mcd-requirement a,mcd-contact-info a,mcd-bonus-received-billboard a,mcd-leaderboard a,mcd-total-issued-bonuses a,mcd-income-calculator a,mcd-commission-info a,mcd-period-revenue-goals a,mcd-can-receive-bonus a,mcd-dashboard a,mcd-received-bonus-record a,mcd-invitation-link a {
+ a, a,a, a, a, a, a, a, a, a, a, a, a, a, a {
     display: block;
     margin: 2.1333333333vw 0
 }
 
-mcd-total-issued-bonuses .bonuses-box,mcd-period-revenue-goals .goals-box-tips,mcd-invitation-link .code-box-tips {
+ .bonuses-box, .goals-box-tips, .code-box-tips {
     display: inline-flex;
     width: 100%;
     padding: 0 4vw;
@@ -2807,19 +2807,19 @@ mcd-total-issued-bonuses .bonuses-box,mcd-period-revenue-goals .goals-box-tips,m
     align-items: center
 }
 
-mcd-total-issued-bonuses .bonuses-box p,mcd-period-revenue-goals .goals-box-tips p,mcd-invitation-link .code-box-tips p {
+ .bonuses-box p, .goals-box-tips p, .code-box-tips p {
     width: auto
 }
 
-mcd-total-issued-bonuses .bonuses-box span,mcd-period-revenue-goals .goals-box-tips span,mcd-invitation-link .code-box-tips span {
+ .bonuses-box span, .goals-box-tips span, .code-box-tips span {
     color: var(--referral-partner-tips-txt-strong, #4574a8)
 }
 
-mcd-invitation-link .code-box:after {
+ .code-box:after {
     display: none
 }
 
-mcd-invitation-link .code-box .btn-share {
+ .code-box .btn-share {
     width: 100%;
     height: 10.6666666667vw;
     margin: auto auto 4.2666666667vw 0;
@@ -2828,7 +2828,7 @@ mcd-invitation-link .code-box .btn-share {
     background: var(--referral-partner-code-box-share-btn, #4574a8)
 }
 
-mcd-invitation-link .code-box .code {
+ .code-box .code {
     flex: unset;
     width: 100%;
     height: 10.6666666667vw;
@@ -2837,28 +2837,28 @@ mcd-invitation-link .code-box .code {
     background: var(--referral-partner-code-input, #132c48)
 }
 
-mcd-invitation-link .code-box .code span {
+ .code-box .code span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: calc(100% - 13.3333333333vw)
 }
 
-mcd-invitation-link .code-box .code .btn {
+ .code-box .code .btn {
     width: 13.3333333333vw;
     height: 100%;
     background: var(--referral-partner-code-copy-btn-bg, #4574a8)
 }
 
-mcd-invitation-link .code-box .code img {
+ .code-box .code img {
     width: 55%
 }
 
-mcd-invitation-link .invite-banner img {
+ .invite-banner img {
     width: 100%
 }
 
-mcd-invitation-link .invite-cont-center {
+ .invite-cont-center {
     position: relative;
     display: flex;
     width: 100%;
@@ -2868,11 +2868,11 @@ mcd-invitation-link .invite-cont-center {
     margin: 1.3333333333vw 0
 }
 
-mcd-invitation-link .invite-cont-center .code-box-tips p {
+ .invite-cont-center .code-box-tips p {
     padding: 0
 }
 
-mcd-invitation-link .invite-cont-center .btn-invite-earn {
+ .invite-cont-center .btn-invite-earn {
     cursor: pointer;
     flex: unset;
     padding: 2.1333333333vw 1.3333333333vw;
@@ -2890,26 +2890,26 @@ mcd-invitation-link .invite-cont-center .btn-invite-earn {
     color: var(--referral-partner-invite-cont-center-btn-txt, #ffffff)
 }
 
-mcd-invitation-link .invite-cont-center .btn-invite-earn+.code-box-tips {
+ .invite-cont-center .btn-invite-earn+.code-box-tips {
     margin-top: 2.6666666667vw
 }
 
-mcd-invitation-link .invite-cont {
+ .invite-cont {
     display: inline-flex;
     width: 100%;
     margin: 2.6666666667vw 0;
     color: var(--referral-partner-invite-cont-txt, #ffffff)
 }
 
-mcd-invitation-link .bonus-title {
+ .bonus-title {
     margin-bottom: 1.0666666667vw
 }
 
-mcd-invitation-link .left {
+ .left {
     width: 40%
 }
 
-mcd-invitation-link .invite-qr-code {
+ .invite-qr-code {
     position: relative;
     width: 100%;
     height: auto;
@@ -2918,7 +2918,7 @@ mcd-invitation-link .invite-qr-code {
     background: var(--referral-partner-invite-qr-code-bg, #132c48)
 }
 
-mcd-invitation-link .qrcode {
+ .qrcode {
     z-index: 0;
     position: relative;
     width: 100%;
@@ -2926,41 +2926,41 @@ mcd-invitation-link .qrcode {
     transform: none
 }
 
-mcd-invitation-link .right {
+ .right {
     width: 60%;
     margin: auto 0 auto 4.2666666667vw
 }
 
-mcd-received-bonus-record .invite-box {
+ .invite-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 1.3333333333vw 0
 }
 
-mcd-received-bonus-record .invite-box .item {
+ .invite-box .item {
     display: inline-flex;
     flex-direction: column;
     align-items: center
 }
 
-mcd-received-bonus-record .invite-box .invite-title {
+ .invite-box .invite-title {
     font-size: 3.2vw;
     font-weight: 700;
     color: var(--referral-partner-invite-box-title-txt, rgba(255, 255, 255, .4))
 }
 
-mcd-received-bonus-record .invite-box .text {
+ .invite-box .text {
     margin-top: 2.1333333333vw;
     font-size: 4.8vw;
     color: var(--referral-partner-invite-box-item-txt, #4574a8)
 }
 
-mcd-received-bonus-record .invite-box .text i {
+ .invite-box .text i {
     color: var(--referral-partner-invite-box-item-txt, #4574a8)
 }
 
-mcd-dashboard .recommend-friends-box {
+ .recommend-friends-box {
     margin: 0;
     padding: 0;
     box-shadow: none;
@@ -2968,7 +2968,7 @@ mcd-dashboard .recommend-friends-box {
     border-radius: 0
 }
 
-mcd-dashboard .recommend-friends-box .status-box {
+ .recommend-friends-box .status-box {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -2976,7 +2976,7 @@ mcd-dashboard .recommend-friends-box .status-box {
     word-break: break-all
 }
 
-mcd-dashboard .recommend-friends-box .status {
+ .recommend-friends-box .status {
     display: flex;
     justify-content: space-between;
     flex: auto;
@@ -2990,11 +2990,11 @@ mcd-dashboard .recommend-friends-box .status {
     padding: 4vw
 }
 
-mcd-dashboard .recommend-friends-box .status.accept:after {
+ .recommend-friends-box .status.accept:after {
     display: none
 }
 
-mcd-dashboard .recommend-friends-box .status .number {
+ .recommend-friends-box .status .number {
     font-size: 8vw;
     font-weight: 700;
     margin: 0;
@@ -3002,7 +3002,7 @@ mcd-dashboard .recommend-friends-box .status .number {
     color: var(--referral-partner-dashboard-num-txt, #4574a8)
 }
 
-mcd-dashboard .recommend-friends-box .status .text {
+ .recommend-friends-box .status .text {
     display: flex;
     width: 100%;
     height: 100%;
@@ -3015,21 +3015,21 @@ mcd-dashboard .recommend-friends-box .status .text {
     justify-content: center
 }
 
-mcd-dashboard .recommend-friends-box .status:nth-child(2n) {
+ .recommend-friends-box .status:nth-child(2n) {
     margin-left: 2.1333333333vw
 }
 
-mcd-dashboard .recommend-friends-box .status .condition:before {
+ .recommend-friends-box .status .condition:before {
     display: none
 }
 
-mcd-can-receive-bonus .receive-box .day-text {
+ .receive-box .day-text {
     margin-top: 2.6666666667vw;
     color: var(--referral-partner-receive-box-txt, #ffffff);
     text-align: right
 }
 
-mcd-can-receive-bonus .receive-box .day-text.bottom-tips {
+ .receive-box .day-text.bottom-tips {
     margin: 0;
     padding: 2.6666666667vw 0;
     text-align: center;
@@ -3037,11 +3037,11 @@ mcd-can-receive-bonus .receive-box .day-text.bottom-tips {
     font-size: 3.2vw
 }
 
-mcd-can-receive-bonus .receive-box i {
+ .receive-box i {
     color: var(--referral-partner-receive-box-txt-strong, #4574a8)
 }
 
-mcd-can-receive-bonus .receive-box .receive-bonus {
+ .receive-box .receive-bonus {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3050,11 +3050,11 @@ mcd-can-receive-bonus .receive-box .receive-bonus {
     margin: 4.2666666667vw 0
 }
 
-mcd-can-receive-bonus .receive-box .text {
+ .receive-box .text {
     font-size: 6.4vw
 }
 
-mcd-can-receive-bonus .receive-box .button {
+ .receive-box .button {
     display: block;
     width: auto;
     padding: 0 4.8vw;
@@ -3062,86 +3062,86 @@ mcd-can-receive-bonus .receive-box .button {
     font-size: 4vw
 }
 
-mcd-can-receive-bonus .receive-box .button.btn-disabled {
+ .receive-box .button.btn-disabled {
     background: var(--referral-partner-receive-btn-disabled, #2f4f72);
     color: var(--referral-partner-receive-btn-txt, #999999)
 }
 
-mcd-period-revenue-goals .goals-box {
+ .goals-box {
     margin-top: 0;
     flex-direction: column
 }
 
-mcd-period-revenue-goals .goals-box .goals-item {
+ .goals-box .goals-item {
     display: flex;
     width: 100%
 }
 
-mcd-period-revenue-goals .goals-box .goals-item .goals-img {
+ .goals-box .goals-item .goals-img {
     width: 18.1333333333vw;
     flex: 0 0 18.1333333333vw;
     margin-right: 3.2vw
 }
 
-mcd-period-revenue-goals .goals-box .goals-item+.goals-box-tips {
+ .goals-box .goals-item+.goals-box-tips {
     margin-top: 4vw
 }
 
-mcd-period-revenue-goals .goals-box i {
+ .goals-box i {
     color: var(--referral-partner-goals-box-txt-strong, #4574a8)
 }
 
-mcd-period-revenue-goals .goals-group {
+ .goals-group {
     width: 100%
 }
 
-mcd-period-revenue-goals .goals-number {
+ .goals-number {
     margin-bottom: 4vw
 }
 
-mcd-period-revenue-goals .goals-number i {
+ .goals-number i {
     font-size: 6.4vw
 }
 
-mcd-period-revenue-goals .progress-bar .bar {
+ .progress-bar .bar {
     height: 2.6666666667vw;
     background: var(--referral-partner-progress-bar-bg, #132c48);
     box-shadow: none
 }
 
-mcd-period-revenue-goals .progress-bar .bar .bar-inner {
+ .progress-bar .bar .bar-inner {
     background: var(--referral-partner-progress-bar-inner-bg, linear-gradient(to right, #bba36c 0%, #e1cb9d 100%));
     box-shadow: none
 }
 
-mcd-period-revenue-goals .progress-bar .bar .bar-inner:after {
+ .progress-bar .bar .bar-inner:after {
     display: none
 }
 
-mcd-period-revenue-goals .progress-bar .number {
+ .progress-bar .number {
     color: var(--referral-partner-progress-bar-txt, #ffffff)
 }
 
-mcd-commission-info .title {
+ .title {
     margin: 0
 }
 
-mcd-commission-info .commission-bets-box {
+ .commission-bets-box {
     display: flex;
     flex-direction: column;
     color: var(--referral-partner-commission-bets-txt, #ffffff);
     line-height: 1.1
 }
 
-mcd-commission-info .commission-bets-box .sec {
+ .commission-bets-box .sec {
     padding: 2.1333333333vw 0
 }
 
-mcd-commission-info .commission-bets-box .sec+.sec {
+ .commission-bets-box .sec+.sec {
     border-top: .2666666667vw solid var(--referral-partner-commission-bets-border, rgba(153, 153, 153, .3))
 }
 
-mcd-commission-info .commission-bets-box .referral-tips h2 {
+ .commission-bets-box .referral-tips h2 {
     width: 100%;
     margin-bottom: 2.1333333333vw;
     display: inline-flex;
@@ -3151,41 +3151,41 @@ mcd-commission-info .commission-bets-box .referral-tips h2 {
     font-size: 4.8vw
 }
 
-mcd-income-calculator .income-calculator {
+ .income-calculator {
     display: flex
 }
 
-mcd-income-calculator .income-calculator .container {
+ .income-calculator .container {
     width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: center
 }
 
-mcd-income-calculator .income-calculator .range-slider {
+ .income-calculator .range-slider {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center
 }
 
-mcd-income-calculator .income-calculator h4 {
+ .income-calculator h4 {
     margin: 2.1333333333vw 0;
     font-size: 4.2666666667vw
 }
 
-mcd-income-calculator .income-calculator h1 {
+ .income-calculator h1 {
     font-size: 6.4vw;
     font-weight: 700;
     color: var(--referral-partner-income-calculator-title, #4574a8)
 }
 
-mcd-income-calculator .income-calculator span {
+ .income-calculator span {
     color: var(--referral-partner-income-calculator-title-txt, #ffffff);
     margin-bottom: 0
 }
 
-mcd-income-calculator .income-calculator .range-slider-text-input {
+ .income-calculator .range-slider-text-input {
     margin: 0 2.1333333333vw;
     padding: 2.1333333333vw;
     border: 0;
@@ -3195,7 +3195,7 @@ mcd-income-calculator .income-calculator .range-slider-text-input {
     text-align: center
 }
 
-mcd-income-calculator .income-calculator .range-slider-input {
+ .income-calculator .range-slider-input {
     width: 100%;
     height: 0;
     margin: 4.2666666667vw 0 2.1333333333vw;
@@ -3204,7 +3204,7 @@ mcd-income-calculator .income-calculator .range-slider-input {
     background: var(--referral-partner-income-calculator-range-slider-bg, #132c48)
 }
 
-mcd-income-calculator .income-calculator .range-slider-input::-webkit-slider-thumb {
+ .income-calculator .range-slider-input::-webkit-slider-thumb {
     width: 5.3333333333vw;
     height: 5.3333333333vw;
     background: var(--referral-partner-income-calculator-range-slider-thumb-bg, #bba36c);
@@ -3214,14 +3214,14 @@ mcd-income-calculator .income-calculator .range-slider-input::-webkit-slider-thu
     -webkit-appearance: none
 }
 
-mcd-income-calculator .income-calculator .range-slider-num {
+ .income-calculator .range-slider-num {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 2.6666666667vw
 }
 
-mcd-total-issued-bonuses .bonuses-box {
+ .bonuses-box {
     display: flex;
     justify-content: flex-start;
     background-color: var(--referral-partner-content-type-light-bg, #183859);
@@ -3230,14 +3230,14 @@ mcd-total-issued-bonuses .bonuses-box {
     padding: 3.2vw
 }
 
-mcd-total-issued-bonuses .bonuses-box .bonuses-type-img {
+ .bonuses-box .bonuses-type-img {
     display: inline-flex;
     width: 18.1333333333vw;
     height: 18.1333333333vw;
     margin: 0 4.8vw 0 4vw
 }
 
-mcd-total-issued-bonuses .bonuses-box .bonuses-group {
+ .bonuses-box .bonuses-group {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -3245,99 +3245,99 @@ mcd-total-issued-bonuses .bonuses-box .bonuses-group {
     justify-content: space-around
 }
 
-mcd-total-issued-bonuses .bonuses-box .bonuses-group div+div {
+ .bonuses-box .bonuses-group div+div {
     margin-top: 1.0666666667vw
 }
 
-mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-title,mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-receive {
+ .bonuses-box .bonuses-group .bonuses-title, .bonuses-box .bonuses-group .bonuses-receive {
     color: var(--referral-partner-bonuses-txt, #ffffff)
 }
 
-mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-title {
+ .bonuses-box .bonuses-group .bonuses-title {
     font-weight: 700
 }
 
-mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-number {
+ .bonuses-box .bonuses-group .bonuses-number {
     color: var(--referral-partner-bonuses-number-txt, rgba(255, 255, 255, .4));
     font-size: 5.8666666667vw
 }
 
-mcd-leaderboard .leaderboard-box {
+ .leaderboard-box {
     background: var(--referral-partner-leaderboard-bg, linear-gradient(180deg, #183859 0%, #192243 100%));
     border-radius: .8vw;
     padding: 5.3333333333vw 2.6666666667vw;
     margin-top: 2.6666666667vw
 }
 
-mcd-leaderboard .leaderboard-box li {
+ .leaderboard-box li {
     display: flex;
     align-items: center;
     font-weight: 700
 }
 
-mcd-leaderboard .leaderboard-box li+li {
+ .leaderboard-box li+li {
     padding-top: 5.8666666667vw
 }
 
-mcd-leaderboard .leaderboard-box li div {
+ .leaderboard-box li div {
     display: inline-flex;
     justify-content: center;
     flex-basis: 14.9333333333vw
 }
 
-mcd-leaderboard .leaderboard-box li:nth-child(1) .leaderboard-top-img p {
+ .leaderboard-box li:nth-child(1) .leaderboard-top-img p {
     color: var(--referral-partner-leaderboard-first-txt, #ffb400)
 }
 
-mcd-leaderboard .leaderboard-box li:nth-child(2) .leaderboard-top-img p {
+ .leaderboard-box li:nth-child(2) .leaderboard-top-img p {
     color: var(--referral-partner-leaderboard-second-txt, #c2c2c2)
 }
 
-mcd-leaderboard .leaderboard-box li:nth-child(3) .leaderboard-top-img p {
+ .leaderboard-box li:nth-child(3) .leaderboard-top-img p {
     color: var(--referral-partner-leaderboard-third-txt, #c06f2f)
 }
 
-mcd-leaderboard .leaderboard-box .leaderboard-top-img {
+ .leaderboard-box .leaderboard-top-img {
     flex-direction: column;
     align-items: center
 }
 
-mcd-leaderboard .leaderboard-box .leaderboard-top-img img {
+ .leaderboard-box .leaderboard-top-img img {
     width: 5.3333333333vw;
     height: auto
 }
 
-mcd-leaderboard .leaderboard-box .leaderboard-top-img p {
+ .leaderboard-box .leaderboard-top-img p {
     margin-top: .8vw
 }
 
-mcd-leaderboard .leaderboard-box .leaderboard-icon-img {
+ .leaderboard-box .leaderboard-icon-img {
     margin: 0 5.3333333333vw
 }
 
-mcd-leaderboard .leaderboard-box .leaderboard-icon-img img {
+ .leaderboard-box .leaderboard-icon-img img {
     width: 100%;
     height: auto
 }
 
-mcd-leaderboard .leaderboard-box .user-id {
+ .leaderboard-box .user-id {
     width: 13.6vw;
     margin: 0 2.6666666667vw 0 0;
     justify-content: left
 }
 
-mcd-leaderboard .leaderboard-box .leaderboard-number {
+ .leaderboard-box .leaderboard-number {
     justify-content: left;
     flex: 1;
     color: var(--referral-partner-bonuses-number-txt, #4574a8)
 }
 
-mcd-bonus-received-billboard .who-received-bonus-box {
+ .who-received-bonus-box {
     display: flex;
     flex-direction: column
 }
 
-mcd-bonus-received-billboard .who-received-bonus-box li {
+ .who-received-bonus-box li {
     display: inline-flex;
     padding: 5.3333333333vw 3.2vw;
     flex-direction: row;
@@ -3350,24 +3350,24 @@ mcd-bonus-received-billboard .who-received-bonus-box li {
     margin-top: 2.6666666667vw
 }
 
-mcd-bonus-received-billboard .who-received-bonus-box li div {
+ .who-received-bonus-box li div {
     margin: 0 1.3333333333vw
 }
 
-mcd-bonus-received-billboard .who-received-bonus-box .user-id,mcd-bonus-received-billboard .who-received-bonus-box .received-bonus-number {
+ .who-received-bonus-box .user-id, .who-received-bonus-box .received-bonus-number {
     color: var(--referral-partner-bonuses-list-txt-strong, #4574a8)
 }
 
-mcd-bonus-received-billboard .who-received-bonus-box .text {
+ .who-received-bonus-box .text {
     color: var(--referral-partner-bonuses-list-txt, #ffffff)
 }
 
-mcd-contact-info .contact-info .contact-link img {
+ .contact-info .contact-link img {
     width: 90%;
     margin: 1.3333333333vw 5% 4vw
 }
 
-mcd-requirement .menu-box .title {
+ .menu-box .title {
     padding: 0;
     margin-top: 2.6666666667vw;
     font-size: 3.2vw;
@@ -3375,11 +3375,11 @@ mcd-requirement .menu-box .title {
     border: 0!important
 }
 
-mcd-requirement .referral-cont {
+ .referral-cont {
     flex-direction: column
 }
 
-mcd-requirement .code-box-tips p {
+ .code-box-tips p {
     width: 100%;
     text-align: center;
     font-size: 2.6666666667vw;
@@ -3387,18 +3387,18 @@ mcd-requirement .code-box-tips p {
     line-height: 3.7333333333vw
 }
 
-mcd-requirement .code-box-tips p i {
+ .code-box-tips p i {
     font-size: 3.7333333333vw;
     color: var(--referral-partner-code-box-tips-txt-strong, #4574a8)
 }
 
-mcd-requirement .condition-list {
+ .condition-list {
     display: flex;
     flex-wrap: wrap;
     width: 100%
 }
 
-mcd-requirement .condition-list .item {
+ .condition-list .item {
     flex: auto;
     flex-direction: column;
     width: calc(50% - 1.0666666667vw);
@@ -3410,14 +3410,14 @@ mcd-requirement .condition-list .item {
     padding: 4vw
 }
 
-mcd-requirement .condition-list .item .condition {
+ .condition-list .item .condition {
     font-size: 3.2vw;
     color: var(--referral-partner-condition-txt, #999999);
     padding: 0;
     margin-bottom: 1.3333333333vw
 }
 
-mcd-requirement .condition-list .item .text {
+ .condition-list .item .text {
     display: flex;
     width: 100%;
     height: 100%;
@@ -3430,15 +3430,15 @@ mcd-requirement .condition-list .item .text {
     justify-content: center
 }
 
-mcd-requirement .condition-list .item:nth-child(2n) {
+ .condition-list .item:nth-child(2n) {
     margin-left: 2.1333333333vw
 }
 
-mcd-requirement .condition-list .item .condition:before {
+ .condition-list .item .condition:before {
     display: none
 }
 
-mcd-referral-bonus-period-info .challenge-bonus-box {
+.challenge-bonus-box {
     display: flex;
     border-radius: .8vw;
     box-shadow: inset 0 0 .8vw var(--referral-partner-challenge-bonus-box-shadow-inset, transparent);
@@ -3448,27 +3448,27 @@ mcd-referral-bonus-period-info .challenge-bonus-box {
     margin: 0
 }
 
-mcd-referral-bonus-period-info .coin-banner {
+.coin-banner {
     width: 40vw;
     margin: 2.6666666667vw 2.6666666667vw 0 0;
     flex: 0 0 40vw
 }
 
-mcd-referral-bonus-period-info .challenge-bonus-info {
+.challenge-bonus-info {
     color: var(--referral-partner-challenge-bonus-txt, #ffffff)
 }
 
-mcd-referral-bonus-period-info .more-depositors-text {
+.more-depositors-text {
     margin-top: 4.2666666667vw
 }
 
-mcd-referral-bonus-goals .tab-btn-block {
+ .tab-btn-block {
     width: 100%;
     overflow: auto;
     margin-bottom: 2.6666666667vw
 }
 
-mcd-referral-bonus-goals .tab-btn-page {
+ .tab-btn-page {
     padding: 0;
     height: auto;
     z-index: 1;
@@ -3479,7 +3479,7 @@ mcd-referral-bonus-goals .tab-btn-page {
     background: transparent
 }
 
-mcd-referral-bonus-goals .tab-btn-page .btn {
+ .tab-btn-page .btn {
     min-width: -moz-fit-content;
     min-width: fit-content;
     padding: 2.6666666667vw 0;
@@ -3488,40 +3488,40 @@ mcd-referral-bonus-goals .tab-btn-page .btn {
     box-shadow: 0 1.3333333333vw 2.6666666667vw 0 var(--referral-partner-achievement-tab-btn-shadow, rgba(6, 8, 15, 0)),inset 0 0 1.3333333333vw 0 var(--referral-partner-achievement-tab-btn-shadow-inset, rgba(255, 255, 255, 0))
 }
 
-mcd-referral-bonus-goals .tab-btn-page .btn+.btn {
+ .tab-btn-page .btn+.btn {
     margin-left: 1.6vw
 }
 
-mcd-referral-bonus-goals .tab-btn-page .btn .text {
+ .tab-btn-page .btn .text {
     color: var(--referral-partner-achievement-tab-btn-txt, #ffffff)
 }
 
-mcd-referral-bonus-goals .tab-btn-page .btn.active {
+ .tab-btn-page .btn.active {
     background: var(--referral-partner-achievement-tab-btn-bg-active, linear-gradient(135deg, #4574a8 0%, #4574a8 100%))
 }
 
-mcd-referral-bonus-goals .tab-btn-page .btn[data-tab-current=current],mcd-referral-bonus-goals .tab-btn-page .btn.active {
+ .tab-btn-page .btn[data-tab-current=current], .tab-btn-page .btn.active {
     background-image: var(--referral-partner-achievement-tab-btn-bg-active, linear-gradient(135deg, #4574a8 0%, #4574a8 100%))
 }
 
-mcd-referral-bonus-goals .tab-btn-page .line {
+ .tab-btn-page .line {
     display: none
 }
 
-mcd-referral-bonus-goals .achievement-bonus-block {
+ .achievement-bonus-block {
     position: relative;
     top: -.8vw;
     z-index: 2
 }
 
-mcd-referral-bonus-goals .period-line {
+ .period-line {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center
 }
 
-mcd-referral-bonus-goals .period-line p {
+ .period-line p {
     display: inline-flex;
     padding: 0 2.6666666667vw;
     width: auto;
@@ -3529,7 +3529,7 @@ mcd-referral-bonus-goals .period-line p {
     text-align: center
 }
 
-mcd-referral-bonus-goals .period-line:before,mcd-referral-bonus-goals .period-line:after {
+ .period-line:before, .period-line:after {
     content: "";
     display: inline-flex;
     width: 100%;
@@ -3538,7 +3538,7 @@ mcd-referral-bonus-goals .period-line:before,mcd-referral-bonus-goals .period-li
     flex: 1
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box li {
+ .achievement-bonus-box li {
     position: relative;
     display: flex;
     align-items: center;
@@ -3551,39 +3551,39 @@ mcd-referral-bonus-goals .achievement-bonus-box li {
     overflow: hidden
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box .achievement-icon {
+ .achievement-bonus-box .achievement-icon {
     width: 18.6666666667vw;
     height: 18.6666666667vw;
     flex: 0 0 18.6666666667vw;
     margin-right: 2.1333333333vw
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box .achievement-bonus-group {
+ .achievement-bonus-box .achievement-bonus-group {
     width: 100%;
     margin: 0
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box .achievement-bonus-title {
+ .achievement-bonus-box .achievement-bonus-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.1333333333vw
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box .achievement-bonus-bar {
+ .achievement-bonus-box .achievement-bonus-bar {
     margin: 0
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box p {
+ .achievement-bonus-box p {
     color: var(--referral-partner-achievement-txt, #ffffff);
     margin: 0
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box i {
+ .achievement-bonus-box i {
     color: var(--referral-partner-achievement-txt-strong, #4574a8)
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box .complete-mask,mcd-referral-bonus-goals .achievement-bonus-box .lock-mask {
+ .achievement-bonus-box .complete-mask, .achievement-bonus-box .lock-mask {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -3595,14 +3595,14 @@ mcd-referral-bonus-goals .achievement-bonus-box .complete-mask,mcd-referral-bonu
     z-index: 1
 }
 
-mcd-referral-bonus-goals .achievement-bonus-box .complete-mask .icon,mcd-referral-bonus-goals .achievement-bonus-box .lock-mask .icon {
+ .achievement-bonus-box .complete-mask .icon, .achievement-bonus-box .lock-mask .icon {
     display: block;
     width: 8vw;
     height: 8vw;
     z-index: 2
 }
 
-mcd-referral-bonus-goals .complete-mask,mcd-referral-bonus-goals .lock-mask {
+ .complete-mask, .lock-mask {
     position: absolute;
     display: flex;
     width: 100%;
@@ -3614,7 +3614,7 @@ mcd-referral-bonus-goals .complete-mask,mcd-referral-bonus-goals .lock-mask {
     z-index: 1
 }
 
-mcd-referral-bonus-goals .complete-mask:before,mcd-referral-bonus-goals .lock-mask:before {
+ .complete-mask:before, .lock-mask:before {
     content: "";
     display: block;
     position: absolute;
@@ -3625,74 +3625,74 @@ mcd-referral-bonus-goals .complete-mask:before,mcd-referral-bonus-goals .lock-ma
     border-radius: .8vw
 }
 
-mcd-referral-bonus-goals .complete-mask .icon,mcd-referral-bonus-goals .lock-mask .icon {
+ .complete-mask .icon, .lock-mask .icon {
     display: block;
     width: 8vw;
     height: 8vw
 }
 
-mcd-referral-bonus-goals .complete-mask:before {
+ .complete-mask:before {
     background: var(--referral-partner-mask-bg-complete, rgba(22, 100, 40, .4));
     border: 1px solid var(--referral-partner-mask-border-complete, rgba(153, 153, 153, .05));
     box-shadow: inset 0 0 2.6666666667vw var(--referral-partner-mask-shadow-inset-complete, transparent)
 }
 
-mcd-referral-bonus-goals .lock-mask:before {
+ .lock-mask:before {
     background: var(--referral-partner-mask-bg-lock, rgba(2, 5, 9, .6))
 }
 
-mcd-referral-bonus-goals .achievement-icon {
+ .achievement-icon {
     width: 13.3333333333vw;
     height: 13.3333333333vw;
     flex: 0 0 18.6666666667vw
 }
 
-mcd-referral-bonus-goals .achievement-bonus-group {
+ .achievement-bonus-group {
     width: 100%
 }
 
-mcd-referral-bonus-goals .achievement-bonus-title {
+ .achievement-bonus-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.1333333333vw
 }
 
-mcd-referral-bonus-goals .achievement-bonus-title p+p {
+ .achievement-bonus-title p+p {
     margin: 0
 }
 
-mcd-referral-bonus-goals .title-group {
+ .title-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1.8666666667vw 0 1.3333333333vw
 }
 
-mcd-referral-bonus-goals .detail-btn {
+ .detail-btn {
     width: 7.4666666667vw;
     height: 7.4666666667vw;
     cursor: pointer
 }
 
-mcd-referral-bonus-goals .pop-bg {
+ .pop-bg {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     background: transparent
 }
 
-mcd-referral-bonus-goals-detail {
+-detail {
     display: flex;
     justify-content: center;
     align-items: center
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus {
+-detail .referral-reward-bonus {
     border-radius: 2.6666666667vw;
     background: var(--referral-partner-bonus-goals-detail-bg, linear-gradient(180deg, #2f5580 0%, #192243 100%))
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close {
+-detail .referral-reward-bonus .btn-close {
     cursor: pointer;
     opacity: 1;
     transition: opacity .3s ease-in;
@@ -3705,11 +3705,11 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close {
     background: transparent
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:hover {
+-detail .referral-reward-bonus .btn-close:hover {
     opacity: .7
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:after,mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:before {
+-detail .referral-reward-bonus .btn-close:after,-detail .referral-reward-bonus .btn-close:before {
     content: "";
     display: block;
     height: 80%;
@@ -3723,19 +3723,19 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:after,mcd-refe
     transform-origin: 50% 50%
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:after {
+-detail .referral-reward-bonus .btn-close:after {
     transform: translateY(-50%) rotate(-45deg)
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:before {
+-detail .referral-reward-bonus .btn-close:before {
     transform: translateY(-50%) rotate(45deg)
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:before,mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:after {
+-detail .referral-reward-bonus .btn-close:before,-detail .referral-reward-bonus .btn-close:after {
     border-radius: 10vw
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .title {
+-detail .referral-reward-bonus .title {
     position: relative;
     display: flex;
     justify-content: center;
@@ -3748,7 +3748,7 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .title {
     color: var(--referral-partner-bonus-goals-detail-title-txt, #ffffff)
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .title p {
+-detail .referral-reward-bonus .title p {
     width: 50%;
     padding: 0 2.1333333333vw;
     font-size: 3.4666666667vw;
@@ -3757,7 +3757,7 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .title p {
     pointer-events: none
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line {
+-detail .referral-reward-bonus .period-line {
     display: flex;
     flex: 1;
     width: 100%;
@@ -3767,7 +3767,7 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line {
     margin: 2.6666666667vw 0
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line p {
+-detail .referral-reward-bonus .period-line p {
     display: inline-flex;
     padding: 0 2.6666666667vw;
     width: auto;
@@ -3778,7 +3778,7 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line p {
     color: var(--referral-partner-bonus-goals-detail-sub-title-txt, #ffffff)
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line:before,mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line:after {
+-detail .referral-reward-bonus .period-line:before,-detail .referral-reward-bonus .period-line:after {
     content: "";
     display: inline-flex;
     width: 100%;
@@ -3787,26 +3787,26 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line:before,mcd-r
     flex: 1
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .period-line:first-child {
+-detail .referral-reward-bonus .period-line:first-child {
     margin-top: 0
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list {
+-detail .referral-reward-bonus .reward-bonus-list {
     overflow-x: hidden;
     overflow-y: scroll;
     margin: 0 0 4.2666666667vw;
     padding: 0 4.2666666667vw
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list ul {
+-detail .referral-reward-bonus .reward-bonus-list ul {
     background: var(--referral-partner-reward-pop-list-bg, linear-gradient(to bottom, #453d45 0%, #30435d 50%, #958457 100%))
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li {
+-detail .referral-reward-bonus .reward-bonus-list li {
     display: flex
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list span {
+-detail .referral-reward-bonus .reward-bonus-list span {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -3815,13 +3815,13 @@ mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list span {
     border: 1.0666666667vw solid var(--referral-partner-bonus-goals-detail-bg, #192243)
 }
 
-mcd-referral-success-pop .show {
+.show {
     opacity: 1;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px)
 }
 
-mcd-referral-success-pop .show .register-success-wrap {
+.show .register-success-wrap {
     padding: 0;
     width: 42.6666666667vw;
     height: 42.6666666667vw;
@@ -3829,18 +3829,18 @@ mcd-referral-success-pop .show .register-success-wrap {
     background-color: var(--referral-partner-pop-bg, rgba(0, 0, 0, .9))
 }
 
-mcd-referral-success-pop .show .success-checkmark {
+.show .success-checkmark {
     width: 16.2666666667vw;
     height: 21.3333333333vw
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon {
+.show .success-checkmark .check-icon {
     width: 14.1333333333vw;
     height: 14.1333333333vw;
     border: 1.0666666667vw solid var(--referral-partner-success-check-icon-border, rgba(40, 184, 73, .5))
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon:after {
+.show .success-checkmark .check-icon:after {
     top: 0;
     left: 8vw;
     width: 16vw;
@@ -3848,21 +3848,21 @@ mcd-referral-success-pop .show .success-checkmark .check-icon:after {
     border-radius: 0 26.6666666667vw 26.6666666667vw x 0
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon:before,mcd-referral-success-pop .show .success-checkmark .check-icon:after {
+.show .success-checkmark .check-icon:before,.show .success-checkmark .check-icon:after {
     background: transparent
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon .icon-fix {
+.show .success-checkmark .check-icon .icon-fix {
     background-color: transparent
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line {
+.show .success-checkmark .check-icon .icon-line {
     height: 1.3333333333vw;
     border-radius: .5333333333vw;
     background-color: var(--referral-partner-success-check-icon-color, #28b849)
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line.line-tip {
+.show .success-checkmark .check-icon .icon-line.line-tip {
     top: 8vw;
     left: 2.1333333333vw;
     width: 4.8vw;
@@ -3870,7 +3870,7 @@ mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line.line-ti
     animation: invite-partner-icon-line-tip .7s
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line.line-long {
+.show .success-checkmark .check-icon .icon-line.line-long {
     top: 6.6666666667vw;
     right: 1.6vw;
     width: 8.5333333333vw;
@@ -3878,7 +3878,7 @@ mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line.line-lo
     animation: invite-partner-icon-line-long .7s
 }
 
-mcd-referral-success-pop .show .success-checkmark .check-icon .icon-circle {
+.show .success-checkmark .check-icon .icon-circle {
     top: -.5997001499vmax;
     left: -.5997001499vmax;
     width: 14.1333333333vw;
@@ -3886,25 +3886,25 @@ mcd-referral-success-pop .show .success-checkmark .check-icon .icon-circle {
     border: transparent
 }
 
-mcd-referral-success-pop .show .register-success-cont .top-inner h4 {
+.show .register-success-cont .top-inner h4 {
     margin: 0
 }
 
-mcd-referral-bonus-terms-conditions .referral-cont {
+ .referral-cont {
     font-size: 3.2vw;
     line-height: 1.2
 }
 
-mcd-referral-bonus-terms-conditions .referral-cont li {
+ .referral-cont li {
     display: flex;
     color: var(--referral-partner-terms-condition-list-txt, #ffffff)
 }
 
-mcd-referral-bonus-terms-conditions .referral-cont li i {
+ .referral-cont li i {
     color: var(--referral-partner-terms-condition-list-decimal, #ffffff)
 }
 
-mcd-referral-bonus-terms-conditions .referral-cont li+li {
+ .referral-cont li+li {
     margin-top: 4.8vw
 }
 
@@ -26929,7 +26929,7 @@ td {
     background: #fff
 }
 
-.referral-partner mcd-commission-info .rebate-bonus-box,.referral-partner mcd-referral-bonus-goals .achievement-bonus-block,.referral-partner mcd-requirement .condition-box,.referral-partner mcd-can-receive-bonus .receive-box,.referral-partner mcd-dashboard .recommend-friends-box,.referral-partner mcd-invitation-link .code-box {
+.referral-partner  .rebate-bonus-box,.referral-partner  .achievement-bonus-block,.referral-partner  .condition-box,.referral-partner  .receive-box,.referral-partner  .recommend-friends-box,.referral-partner  .code-box {
     background: #2f5580;
     border-radius: 1.3333333333vw;
     box-shadow: unset;
@@ -26943,38 +26943,38 @@ td {
     border-radius: 1.3333333333vw 1.3333333333vw 0 0
 }
 
-.referral-partner mcd-invitation-link {
+.referral-partner  {
     font-size: 3.2vw
 }
 
-.referral-partner mcd-invitation-link .code-box {
+.referral-partner  .code-box {
     position: relative
 }
 
-.referral-partner mcd-invitation-link .code-box .code {
+.referral-partner  .code-box .code {
     height: 9.3333333333vw
 }
 
-.referral-partner mcd-invitation-link .code-box .code .btn {
+.referral-partner  .code-box .code .btn {
     box-shadow: inset 0 .2666666667vw .8vw #ffffff80
 }
 
-.referral-partner mcd-invitation-link .invite-cont,.referral-partner mcd-invitation-link .invite-cont-center {
+.referral-partner  .invite-cont,.referral-partner  .invite-cont-center {
     padding: 4.8vw;
     margin: 0
 }
 
-.referral-partner mcd-invitation-link .left {
+.referral-partner  .left {
     width: 30.6666666667vw
 }
 
-.referral-partner mcd-invitation-link .invite-qr-code {
+.referral-partner  .invite-qr-code {
     padding: 1.0666666667vw;
     border-radius: 1.3333333333vw;
     border: .5333333333vw solid #90b4ef
 }
 
-.referral-partner mcd-invitation-link .qrcode {
+.referral-partner  .qrcode {
     z-index: 0;
     position: relative;
     width: 100%;
@@ -26984,18 +26984,18 @@ td {
     overflow: hidden
 }
 
-.referral-partner mcd-invitation-link .btn-share {
+.referral-partner  .btn-share {
     height: 9.3333333333vw;
     margin: auto auto 4vw 0
 }
 
-.referral-partner mcd-invitation-link .right {
+.referral-partner  .right {
     position: relative;
     width: calc(100% - 30.6666666667vw);
     margin: auto 0 auto 8.5333333333vw
 }
 
-.referral-partner mcd-invitation-link .right:before {
+.referral-partner  .right:before {
     content: "";
     position: absolute;
     display: block;
@@ -27006,126 +27006,126 @@ td {
     background: #90b4ef4d
 }
 
-.referral-partner mcd-dashboard .recommend-friends-box {
+.referral-partner  .recommend-friends-box {
     padding: 4.8vw
 }
 
-.referral-partner mcd-can-receive-bonus .receive-box .item {
+.referral-partner  .receive-box .item {
     padding: 3.2vw 4.8vw
 }
 
-.referral-partner mcd-can-receive-bonus .receive-box .day-text i {
+.referral-partner  .receive-box .day-text i {
     color: #90b4ef
 }
 
-.referral-partner mcd-can-receive-bonus .receive-box .button {
+.referral-partner  .receive-box .button {
     background: linear-gradient(180deg,#e24848,#bf2323)
 }
 
-.referral-partner mcd-can-receive-bonus .receive-box .button.btn-disabled {
+.referral-partner  .receive-box .button.btn-disabled {
     color: #ffffff80;
     background: linear-gradient(180deg,#878787,#666,#424242 50%,#484646 85%,#585353);
     box-shadow: 0 .2666666667vw .5333333333vw #00000042,inset 0 .2666666667vw .8vw #ffffff80
 }
 
-.referral-partner mcd-can-receive-bonus .receive-bonus {
+.referral-partner  .receive-bonus {
     margin: 0
 }
 
-.referral-partner mcd-requirement .referral-cont {
+.referral-partner  .referral-cont {
     padding: 4.8vw
 }
 
-.referral-partner mcd-requirement .referral-cont .title {
+.referral-partner  .referral-cont .title {
     margin: 0 0 2.6666666667vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block {
+.referral-partner  .achievement-bonus-block {
     flex-direction: column;
     padding: 4.8vw 4.2666666667vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block li {
+.referral-partner  .achievement-bonus-block li {
     margin: 1.3333333333vw 0;
     box-shadow: unset;
     border: 0
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .achievement-bonus-title {
+.referral-partner  .achievement-bonus-block .achievement-bonus-title {
     display: block;
     margin-bottom: 2.1333333333vw;
     font-size: 3.7333333333vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .achievement-bonus-title p {
+.referral-partner  .achievement-bonus-block .achievement-bonus-title p {
     display: flex;
     align-items: center;
     width: 100%;
     line-height: 1
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .achievement-bonus-title p.txt {
+.referral-partner  .achievement-bonus-block .achievement-bonus-title p.txt {
     justify-content: flex-start;
     font-size: 3.2vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .achievement-bonus-title p.txt i {
+.referral-partner  .achievement-bonus-block .achievement-bonus-title p.txt i {
     font-size: 3.7333333333vw;
     margin-left: 1.3333333333vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .achievement-bonus-title p.number {
+.referral-partner  .achievement-bonus-block .achievement-bonus-title p.number {
     justify-content: flex-end;
     font-size: 3.2vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .achievement-bonus-title p.number i {
+.referral-partner  .achievement-bonus-block .achievement-bonus-title p.number i {
     display: block;
     margin-right: .8vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block strong {
+.referral-partner  .achievement-bonus-block strong {
     font-size: 4.2666666667vw
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block strong i {
+.referral-partner  .achievement-bonus-block strong i {
     color: #e24848
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .lock-mask {
+.referral-partner  .achievement-bonus-block .lock-mask {
     border: .5333333333vw solid #90b4ef
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .progress-bar .bar {
+.referral-partner  .achievement-bonus-block .progress-bar .bar {
     height: 1.6vw;
     background: #0f212f
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .progress-bar .bar .bar-inner {
+.referral-partner  .achievement-bonus-block .progress-bar .bar .bar-inner {
     background: linear-gradient(to right,#c8ddff,#90b4ef);
     box-shadow: none
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .progress-bar .bar .bar-inner:after {
+.referral-partner  .achievement-bonus-block .progress-bar .bar .bar-inner:after {
     display: none
 }
 
-.referral-partner mcd-referral-bonus-goals .achievement-bonus-block .progress-bar .number {
+.referral-partner  .achievement-bonus-block .progress-bar .number {
     font-size: 3.7333333333vw
 }
 
-.referral-partner mcd-referral-bonus-goals .menu-box .title-group {
+.referral-partner  .menu-box .title-group {
     position: relative;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.3333333333vw
 }
 
-.referral-partner mcd-referral-bonus-goals .menu-box .title-group h2 {
+.referral-partner  .menu-box .title-group h2 {
     max-width: 60%
 }
 
-.referral-partner mcd-referral-bonus-goals .menu-box .title-group .detail-btn {
+.referral-partner  .menu-box .title-group .detail-btn {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -27137,12 +27137,12 @@ td {
     height: 9.3333333333vw
 }
 
-.referral-partner mcd-referral-bonus-goals .menu-box .title-group .detail-btn img {
+.referral-partner  .menu-box .title-group .detail-btn img {
     width: 4vw;
     height: 4vw
 }
 
-.referral-partner mcd-referral-bonus-goals .menu-box .title-group .detail-btn span {
+.referral-partner  .menu-box .title-group .detail-btn span {
     display: inline-block;
     font-size: 3.2vw;
     line-height: 1;
@@ -27152,84 +27152,84 @@ td {
     white-space: nowrap
 }
 
-.referral-partner mcd-referral-bonus-goals .menu-box .title-group .detail-btn img+span {
+.referral-partner  .menu-box .title-group .detail-btn img+span {
     margin-left: 1.3333333333vw
 }
 
-.referral-partner mcd-commission-info .rebate-bonus-box {
+.referral-partner  .rebate-bonus-box {
     padding: 4.8vw
 }
 
-.referral-partner mcd-commission-info .referral-cont {
+.referral-partner  .referral-cont {
     flex-direction: column
 }
 
-.referral-partner mcd-commission-info .referral-cont .table {
+.referral-partner  .referral-cont .table {
     border-color: #123356
 }
 
-.referral-partner mcd-commission-info .referral-cont .table table {
+.referral-partner  .referral-cont .table table {
     width: 100%;
     text-align: center
 }
 
-.referral-partner mcd-commission-info .referral-cont .table table tr {
+.referral-partner  .referral-cont .table table tr {
     border-bottom: transparent
 }
 
-.referral-partner mcd-commission-info .referral-cont .table table th {
+.referral-partner  .referral-cont .table table th {
     background: #3786d080;
     padding: 1.0666666667vw;
     vertical-align: middle
 }
 
-.referral-partner mcd-commission-info .referral-cont .table table td {
+.referral-partner  .referral-cont .table table td {
     background: #c4d8f8;
     color: #123356
 }
 
-.referral-partner mcd-commission-info .referral-cont .table table th,.referral-partner mcd-commission-info .referral-cont .table table td {
+.referral-partner  .referral-cont .table table th,.referral-partner  .referral-cont .table table td {
     border: 2px solid #2f5580
 }
 
-.referral-partner mcd-commission-info img {
+.referral-partner  img {
     width: 100%;
     margin-bottom: 4.2666666667vw
 }
 
-.referral-partner mcd-commission-info .sec {
+.referral-partner  .sec {
     line-height: 1.2
 }
 
-.referral-partner mcd-commission-info .sec+.sec {
+.referral-partner  .sec+.sec {
     margin-top: 6.4vw
 }
 
-.referral-partner mcd-commission-info .sec h3 {
+.referral-partner  .sec h3 {
     font-weight: 700;
     font-size: 3.7333333333vw;
     margin-bottom: 2.6666666667vw;
     color: #90b4ef
 }
 
-.referral-partner mcd-commission-info .sec p,.referral-partner mcd-commission-info .sec li {
+.referral-partner  .sec p,.referral-partner  .sec li {
     font-size: 3.2vw;
     font-weight: 400
 }
 
-.referral-partner mcd-commission-info .sec p {
+.referral-partner  .sec p {
     margin: 0
 }
 
-.referral-partner mcd-commission-info .sec p+p {
+.referral-partner  .sec p+p {
     margin-top: 2.1333333333vw
 }
 
-.referral-partner mcd-commission-info .sec li+li {
+.referral-partner  .sec li+li {
     margin-top: 2.6666666667vw
 }
 
-.referral-partner mcd-commission-info .sec strong {
+.referral-partner  .sec strong {
     display: block;
     width: 100%;
     text-align: center;
@@ -27237,61 +27237,61 @@ td {
     margin-top: 6.4vw
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:before,mcd-referral-bonus-goals-detail .referral-reward-bonus .btn-close:after {
+-detail .referral-reward-bonus .btn-close:before,-detail .referral-reward-bonus .btn-close:after {
     background: #fff
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list span {
+-detail .referral-reward-bonus .reward-bonus-list span {
     font-weight: 700;
     font-size: 3.7333333333vw;
     background: #ffe7e7
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list span:first-child {
+-detail .referral-reward-bonus .reward-bonus-list span:first-child {
     border-radius: 1.3333333333vw 0 0 1.3333333333vw
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list span:last-child {
+-detail .referral-reward-bonus .reward-bonus-list span:last-child {
     border-radius: 0 1.3333333333vw 1.3333333333vw 0
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(1) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(1) span {
     background: #4574a8
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(2) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(2) span {
     background: #568cc7
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(3) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(3) span {
     background: #66a1e1
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(4) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(4) span {
     background: #7eb9f8
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(5) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(5) span {
     background: #99caff
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(6) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(6) span {
     background: #c1dfff
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(7) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(7) span {
     background: #feeeee
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(8) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(8) span {
     background: #fcc1c1
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(9) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(9) span {
     background: #fa9999
 }
 
-mcd-referral-bonus-goals-detail .referral-reward-bonus .reward-bonus-list li:nth-child(10) span {
+-detail .referral-reward-bonus .reward-bonus-list li:nth-child(10) span {
     background: #ec3f3e
 }
 
@@ -27982,7 +27982,7 @@ html.is-mobile .popup-page.show-toolbar,html.is-mobile .popup-page.show-toolbar 
     padding: 0vw 2.6666666667vw 2.6666666667vw
 }
 
-mcd-carousel-banner .banner:has(.carousel-wrap.siblings.mcd),mcd-carousel-banner .banner-v1:has(.carousel-wrap.siblings.mcd) {
+.banner:has(.carousel-wrap.siblings.mcd),.banner-v1:has(.carousel-wrap.siblings.mcd) {
     height: 40vw
 }
 
@@ -28036,7 +28036,7 @@ mcd-carousel-banner .banner:has(.carousel-wrap.siblings.mcd),mcd-carousel-banner
     padding: 1.8666666667vw 0 2.6666666667vw
 }
 
-mcd-carousel-banner .banner:has(.carousel-wrap.singlefull.mcd),mcd-carousel-banner .banner-v1:has(.carousel-wrap.singlefull.mcd) {
+.banner:has(.carousel-wrap.singlefull.mcd),.banner-v1:has(.carousel-wrap.singlefull.mcd) {
     height: 48.5333333333vw
 }
 
@@ -28959,7 +28959,7 @@ mcd-carousel-banner .banner:has(.carousel-wrap.singlefull.mcd),mcd-carousel-bann
     margin: 0 0 2.6666666667vw;
 }
 
-.referral-partner .menu-box .title, .referral-partner .menu-box .title-group {
+/* .referral-partner .menu-box .title, .referral-partner .menu-box .title-group {
     border: none;
     margin-bottom: 0;
 }
@@ -28967,7 +28967,7 @@ mcd-carousel-banner .banner:has(.carousel-wrap.singlefull.mcd),mcd-carousel-bann
 .referral-partner .menu-box .title, .referral-partner .menu-box .title-group {
     margin-bottom: 2.6666666667vw;
     border-bottom: .2666666667vw solid var(--referral-partner-title-group-border, rgba(153, 153, 153, .3));
-}
+} */
 
 .condition-list {
     display: flex;
