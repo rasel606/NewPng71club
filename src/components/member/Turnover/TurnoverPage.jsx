@@ -1,75 +1,150 @@
-// components/member/Turnover/TurnoverPage.jsx
-import React, { useState } from "react";
-import TabButtonNav from "./TabButtonNav";
-import ActiveTurnover from "./ActiveTurnover";
-import CompletedTurnover from "./CompletedTurnover";
-import TurnoverInfoPopup from "./TurnoverInfoPopup";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { usePopup } from "../../layouts/PopupManager";
 
-export default ({ showError, showSuccess, showWarning, showInfo }) => {
+import TurnoverCard from "./TurnoverCard";
+import TurnoverDetailPopup from "./TurnoverDetailPopup";
+import TabNavigation from "./TabNavigation";
+import { useApp } from "../../../contexts/AppContext";
+
+const TurnoverPage = ({ showError, showSuccess, showWarning, showInfo }) => {
+  const { openPopup, closePopup } = usePopup();
+  const { 
+    turnoverData, 
+    fetchActiveTurnover, 
+    fetchCompletedTurnover,
+    fetchAllTurnoverData 
+  } = useApp();
+  
   const [activeTab, setActiveTab] = useState("active");
-  const navigate = useNavigate();
-  const [showTurnoverInfoPopup, setTurnoverInfoPopup] = useState(false);
-  const [selectedTurnover, setSelectedTurnover] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const tabs = [
     { key: "active", label: "Active" },
     { key: "completed", label: "Completed" },
   ];
 
-  const handleShowDetails = (turnover) => {
-    setSelectedTurnover(turnover);
-    setTurnoverInfoPopup(true);
-    showSuccess("Turnover details loaded successfully");
-  };
-
-  const handleCloseMainPopup = () => {
-    navigate(-1);
-  };
-
-  const handleCloseDetails = () => {
-    setTurnoverInfoPopup(false);
-    setSelectedTurnover(null);
-  };
-
-  const handleTabChange = (tabKey) => {
-    setActiveTab(tabKey);
-  };
-
-  const renderContent = () => {
-    switch (activeTab) {
-      case "active":
-        return <ActiveTurnover onShowDetails={handleShowDetails} />;
-      case "completed":
-        return <CompletedTurnover onShowDetails={handleShowDetails} />;
-      default:
-        return <ActiveTurnover onShowDetails={handleShowDetails} />;
+  // Fetch data based on active tab
+  const fetchTabData = async (tabKey) => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      if (tabKey === "active") {
+        await fetchActiveTurnover();
+      } else if (tabKey === "completed") {
+        await fetchCompletedTurnover();
+      }
+    } catch (err) {
+      console.error(`Error fetching ${tabKey} turnover:`, err);
+      setError(`Failed to load ${tabKey} turnover data`);
+      showError(`Failed to load ${tabKey} turnover data`);
+    } finally {
+      setLoading(false);
     }
   };
 
-  return (
-    <>
-      {/* Main Turnover Popup */}
-      <div className="content mcd-style fixed-tab player-content">
-        <div className="tab-btn-section">
-          <TabButtonNav
-            tabs={tabs}
-            activeTab={activeTab}
-            onTabChange={handleTabChange}
-          />
-        </div>
+  // Initial data load
+  useEffect(() => {
+    fetchAllTurnoverData().finally(() => {
+      setLoading(false);
+    });
+  }, [fetchAllTurnoverData]);
 
-        <div className="tab-content ng-trigger ng-trigger-tabPageTriggerAni">
-          {renderContent()}
-        </div>
+  const handleTabChange = async (tabKey) => {
+    setActiveTab(tabKey);
+    
+    // Fetch data for the new tab if not already loaded
+    if ((tabKey === "active" && turnoverData.active.length === 0) || 
+        (tabKey === "completed" && turnoverData.completed.length === 0)) {
+      await fetchTabData(tabKey);
+    }
+  };
+
+  const handleDetailClick = (turnover) => {
+    openPopup(
+      <TurnoverDetailPopup turnover={turnover} onClose={closePopup} />,
+      {
+        title: "Turnover Details",
+        size: "medium",
+        position: "center",
+        closeOnBackdrop: true,
+        closeOnEscape: true,
+      }
+    );
+  };
+
+  const handleRetry = () => {
+    fetchTabData(activeTab);
+  };
+
+  // Get filtered data based on active tab
+  const filteredData = activeTab === "completed" 
+    ? turnoverData.completed 
+    : turnoverData.active;
+
+  if (loading && turnoverData.active.length === 0 && turnoverData.completed.length === 0) {
+    return (
+      <div className="turnover-loading">
+        <div className="loading-spinner"></div>
+        <p>লোড হচ্ছে...</p>
       </div>
+    );
+  }
 
-      {/* Turnover Details Popup */}
-      <TurnoverInfoPopup
-        show={showTurnoverInfoPopup}
-        turnover={selectedTurnover}
-        onClose={handleCloseDetails}
+  if (error) {
+    return (
+      <div className="turnover-error">
+        <div className="error-icon">⚠️</div>
+        <p>{error}</p>
+        <button onClick={handleRetry} className="retry-button">
+          Retry
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="turnover-page">
+      {/* Tab Navigation */}
+      <TabNavigation
+        tabs={tabs}
+        activeTab={activeTab}
+        onTabChange={handleTabChange}
       />
-    </>
+
+      {/* Loading state for tab switch */}
+      {loading && (turnoverData.active.length > 0 || turnoverData.completed.length > 0) && (
+        <div className="tab-loading">
+          <div className="loading-spinner small"></div>
+          <p>Loading...</p>
+        </div>
+      )}
+
+      {/* Turnover List */}
+      <div className="turnover-content">
+        <ul className="ticket-wrap">
+          {filteredData.length > 0 ? (
+            filteredData.map((turnover) => (
+              <TurnoverCard
+                key={turnover.id}
+                turnover={turnover}
+                onDetailClick={handleDetailClick}
+              />
+            ))
+          ) : (
+            <div className="no-data">
+              <p>No {activeTab} turnover records found</p>
+            </div>
+          )}
+        </ul>
+
+        {filteredData.length > 0 && (
+          <div className="prompt">－end of page－</div>
+        )}
+      </div>
+    </div>
   );
 };
+
+export default TurnoverPage;

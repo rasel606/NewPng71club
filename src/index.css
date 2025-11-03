@@ -2765,41 +2765,13 @@ html.is-desktop .nav-category {
     color: var(--referral-partner-challenge-bonus-txt-strong, #4574a8)
 }
 
-/* ,,,,,,,,,,,,,, {
-    font-size: var(--referral-partner-txt-font-size, 3.7333333333vw)
-} */
 
- h2, h2,h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2, h2 span, h2 span,h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span, h2 span {
-    font-size: var(--referral-partner-h2-font-size, 3.7333333333vw);
-    color: var(--referral-partner-sub-title, #ffffff)
-}
-
- div, div,div, div, div, div, div, div, div, div, div, div, div, div, div, p, p,p, p, p, p, p, p, p, p, p, p, p, p, p {
-    font-size: var(--referral-partner-p-font-size, 3.7333333333vw)
-}
-
- p, p,p, p, p, p, p, p, p, p, p, p, p, p, p {
-    margin: 2.1333333333vw 0
-}
-
- span, span,span, span, span, span, span, span, span, span, span, span, span, span, span {
-    color: var(--referral-partner-txt, rgba(255, 255, 255, .4))
-}
-
- i, i,i, i, i, i, i, i, i, i, i, i, i, i, i, a, a,a, a, a, a, a, a, a, a, a, a, a, a, a, strong, strong,strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong {
-    color: var(--referral-partner-txt-strong, #4574a8)
-}
-
- strong, strong,strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong, strong {
-    font-weight: 700
-}
-
- a, a,a, a, a, a, a, a, a, a, a, a, a, a, a {
+mcd-referral-bonus-terms-conditions a, a,a, a,mcd-contact-info a,mcd-bonus-received-billboard a,mcd-leaderboard a,mcd-total-issued-bonuses a,mcd-income-calculator a,mcd-commission-info a,mcd-period-revenue-goals a, a,mcd-dashboard a,mcd-received-bonus-record a,mcd-invitation-link a {
     display: block;
     margin: 2.1333333333vw 0
 }
 
- .bonuses-box, .goals-box-tips, .code-box-tips {
+mcd-total-issued-bonuses .bonuses-box,mcd-period-revenue-goals .goals-box-tips,mcd-invitation-link .code-box-tips {
     display: inline-flex;
     width: 100%;
     padding: 0 4vw;
@@ -2807,19 +2779,19 @@ html.is-desktop .nav-category {
     align-items: center
 }
 
- .bonuses-box p, .goals-box-tips p, .code-box-tips p {
+mcd-total-issued-bonuses .bonuses-box p,mcd-period-revenue-goals .goals-box-tips p,mcd-invitation-link .code-box-tips p {
     width: auto
 }
 
- .bonuses-box span, .goals-box-tips span, .code-box-tips span {
+mcd-total-issued-bonuses .bonuses-box span,mcd-period-revenue-goals .goals-box-tips span,mcd-invitation-link .code-box-tips span {
     color: var(--referral-partner-tips-txt-strong, #4574a8)
 }
 
- .code-box:after {
+mcd-invitation-link .code-box:after {
     display: none
 }
 
- .code-box .btn-share {
+mcd-invitation-link .code-box .btn-share {
     width: 100%;
     height: 10.6666666667vw;
     margin: auto auto 4.2666666667vw 0;
@@ -2828,7 +2800,7 @@ html.is-desktop .nav-category {
     background: var(--referral-partner-code-box-share-btn, #4574a8)
 }
 
- .code-box .code {
+mcd-invitation-link .code-box .code {
     flex: unset;
     width: 100%;
     height: 10.6666666667vw;
@@ -2837,28 +2809,28 @@ html.is-desktop .nav-category {
     background: var(--referral-partner-code-input, #132c48)
 }
 
- .code-box .code span {
+mcd-invitation-link .code-box .code span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: calc(100% - 13.3333333333vw)
 }
 
- .code-box .code .btn {
+mcd-invitation-link .code-box .code .btn {
     width: 13.3333333333vw;
     height: 100%;
     background: var(--referral-partner-code-copy-btn-bg, #4574a8)
 }
 
- .code-box .code img {
+mcd-invitation-link .code-box .code img {
     width: 55%
 }
 
- .invite-banner img {
+mcd-invitation-link .invite-banner img {
     width: 100%
 }
 
- .invite-cont-center {
+mcd-invitation-link .invite-cont-center {
     position: relative;
     display: flex;
     width: 100%;
@@ -2868,11 +2840,11 @@ html.is-desktop .nav-category {
     margin: 1.3333333333vw 0
 }
 
- .invite-cont-center .code-box-tips p {
+mcd-invitation-link .invite-cont-center .code-box-tips p {
     padding: 0
 }
 
- .invite-cont-center .btn-invite-earn {
+mcd-invitation-link .invite-cont-center .btn-invite-earn {
     cursor: pointer;
     flex: unset;
     padding: 2.1333333333vw 1.3333333333vw;
@@ -2890,26 +2862,26 @@ html.is-desktop .nav-category {
     color: var(--referral-partner-invite-cont-center-btn-txt, #ffffff)
 }
 
- .invite-cont-center .btn-invite-earn+.code-box-tips {
+mcd-invitation-link .invite-cont-center .btn-invite-earn+.code-box-tips {
     margin-top: 2.6666666667vw
 }
 
- .invite-cont {
+mcd-invitation-link .invite-cont {
     display: inline-flex;
     width: 100%;
     margin: 2.6666666667vw 0;
     color: var(--referral-partner-invite-cont-txt, #ffffff)
 }
 
- .bonus-title {
+mcd-invitation-link .bonus-title {
     margin-bottom: 1.0666666667vw
 }
 
- .left {
+mcd-invitation-link .left {
     width: 40%
 }
 
- .invite-qr-code {
+mcd-invitation-link .invite-qr-code {
     position: relative;
     width: 100%;
     height: auto;
@@ -2918,7 +2890,7 @@ html.is-desktop .nav-category {
     background: var(--referral-partner-invite-qr-code-bg, #132c48)
 }
 
- .qrcode {
+mcd-invitation-link .qrcode {
     z-index: 0;
     position: relative;
     width: 100%;
@@ -2926,41 +2898,41 @@ html.is-desktop .nav-category {
     transform: none
 }
 
- .right {
+mcd-invitation-link .right {
     width: 60%;
     margin: auto 0 auto 4.2666666667vw
 }
 
- .invite-box {
+mcd-received-bonus-record .invite-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 1.3333333333vw 0
 }
 
- .invite-box .item {
+mcd-received-bonus-record .invite-box .item {
     display: inline-flex;
     flex-direction: column;
     align-items: center
 }
 
- .invite-box .invite-title {
+mcd-received-bonus-record .invite-box .invite-title {
     font-size: 3.2vw;
     font-weight: 700;
     color: var(--referral-partner-invite-box-title-txt, rgba(255, 255, 255, .4))
 }
 
- .invite-box .text {
+mcd-received-bonus-record .invite-box .text {
     margin-top: 2.1333333333vw;
     font-size: 4.8vw;
     color: var(--referral-partner-invite-box-item-txt, #4574a8)
 }
 
- .invite-box .text i {
+mcd-received-bonus-record .invite-box .text i {
     color: var(--referral-partner-invite-box-item-txt, #4574a8)
 }
 
- .recommend-friends-box {
+mcd-dashboard .recommend-friends-box {
     margin: 0;
     padding: 0;
     box-shadow: none;
@@ -2968,7 +2940,7 @@ html.is-desktop .nav-category {
     border-radius: 0
 }
 
- .recommend-friends-box .status-box {
+mcd-dashboard .recommend-friends-box .status-box {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -2976,7 +2948,7 @@ html.is-desktop .nav-category {
     word-break: break-all
 }
 
- .recommend-friends-box .status {
+mcd-dashboard .recommend-friends-box .status {
     display: flex;
     justify-content: space-between;
     flex: auto;
@@ -2990,11 +2962,11 @@ html.is-desktop .nav-category {
     padding: 4vw
 }
 
- .recommend-friends-box .status.accept:after {
+mcd-dashboard .recommend-friends-box .status.accept:after {
     display: none
 }
 
- .recommend-friends-box .status .number {
+mcd-dashboard .recommend-friends-box .status .number {
     font-size: 8vw;
     font-weight: 700;
     margin: 0;
@@ -3002,7 +2974,7 @@ html.is-desktop .nav-category {
     color: var(--referral-partner-dashboard-num-txt, #4574a8)
 }
 
- .recommend-friends-box .status .text {
+mcd-dashboard .recommend-friends-box .status .text {
     display: flex;
     width: 100%;
     height: 100%;
@@ -3015,11 +2987,11 @@ html.is-desktop .nav-category {
     justify-content: center
 }
 
- .recommend-friends-box .status:nth-child(2n) {
+mcd-dashboard .recommend-friends-box .status:nth-child(2n) {
     margin-left: 2.1333333333vw
 }
 
- .recommend-friends-box .status .condition:before {
+mcd-dashboard .recommend-friends-box .status .condition:before {
     display: none
 }
 
@@ -3067,81 +3039,81 @@ html.is-desktop .nav-category {
     color: var(--referral-partner-receive-btn-txt, #999999)
 }
 
- .goals-box {
+mcd-period-revenue-goals .goals-box {
     margin-top: 0;
     flex-direction: column
 }
 
- .goals-box .goals-item {
+mcd-period-revenue-goals .goals-box .goals-item {
     display: flex;
     width: 100%
 }
 
- .goals-box .goals-item .goals-img {
+mcd-period-revenue-goals .goals-box .goals-item .goals-img {
     width: 18.1333333333vw;
     flex: 0 0 18.1333333333vw;
     margin-right: 3.2vw
 }
 
- .goals-box .goals-item+.goals-box-tips {
+mcd-period-revenue-goals .goals-box .goals-item+.goals-box-tips {
     margin-top: 4vw
 }
 
- .goals-box i {
+mcd-period-revenue-goals .goals-box i {
     color: var(--referral-partner-goals-box-txt-strong, #4574a8)
 }
 
- .goals-group {
+mcd-period-revenue-goals .goals-group {
     width: 100%
 }
 
- .goals-number {
+mcd-period-revenue-goals .goals-number {
     margin-bottom: 4vw
 }
 
- .goals-number i {
+mcd-period-revenue-goals .goals-number i {
     font-size: 6.4vw
 }
 
- .progress-bar .bar {
+mcd-period-revenue-goals .progress-bar .bar {
     height: 2.6666666667vw;
     background: var(--referral-partner-progress-bar-bg, #132c48);
     box-shadow: none
 }
 
- .progress-bar .bar .bar-inner {
+mcd-period-revenue-goals .progress-bar .bar .bar-inner {
     background: var(--referral-partner-progress-bar-inner-bg, linear-gradient(to right, #bba36c 0%, #e1cb9d 100%));
     box-shadow: none
 }
 
- .progress-bar .bar .bar-inner:after {
+mcd-period-revenue-goals .progress-bar .bar .bar-inner:after {
     display: none
 }
 
- .progress-bar .number {
+mcd-period-revenue-goals .progress-bar .number {
     color: var(--referral-partner-progress-bar-txt, #ffffff)
 }
 
- .title {
+mcd-commission-info .title {
     margin: 0
 }
 
- .commission-bets-box {
+mcd-commission-info .commission-bets-box {
     display: flex;
     flex-direction: column;
     color: var(--referral-partner-commission-bets-txt, #ffffff);
     line-height: 1.1
 }
 
- .commission-bets-box .sec {
+mcd-commission-info .commission-bets-box .sec {
     padding: 2.1333333333vw 0
 }
 
- .commission-bets-box .sec+.sec {
+mcd-commission-info .commission-bets-box .sec+.sec {
     border-top: .2666666667vw solid var(--referral-partner-commission-bets-border, rgba(153, 153, 153, .3))
 }
 
- .commission-bets-box .referral-tips h2 {
+mcd-commission-info .commission-bets-box .referral-tips h2 {
     width: 100%;
     margin-bottom: 2.1333333333vw;
     display: inline-flex;
@@ -3151,41 +3123,41 @@ html.is-desktop .nav-category {
     font-size: 4.8vw
 }
 
- .income-calculator {
+mcd-income-calculator .income-calculator {
     display: flex
 }
 
- .income-calculator .container {
+mcd-income-calculator .income-calculator .container {
     width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: center
 }
 
- .income-calculator .range-slider {
+mcd-income-calculator .income-calculator .range-slider {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center
 }
 
- .income-calculator h4 {
+mcd-income-calculator .income-calculator h4 {
     margin: 2.1333333333vw 0;
     font-size: 4.2666666667vw
 }
 
- .income-calculator h1 {
+mcd-income-calculator .income-calculator h1 {
     font-size: 6.4vw;
     font-weight: 700;
     color: var(--referral-partner-income-calculator-title, #4574a8)
 }
 
- .income-calculator span {
+mcd-income-calculator .income-calculator span {
     color: var(--referral-partner-income-calculator-title-txt, #ffffff);
     margin-bottom: 0
 }
 
- .income-calculator .range-slider-text-input {
+mcd-income-calculator .income-calculator .range-slider-text-input {
     margin: 0 2.1333333333vw;
     padding: 2.1333333333vw;
     border: 0;
@@ -3195,7 +3167,7 @@ html.is-desktop .nav-category {
     text-align: center
 }
 
- .income-calculator .range-slider-input {
+mcd-income-calculator .income-calculator .range-slider-input {
     width: 100%;
     height: 0;
     margin: 4.2666666667vw 0 2.1333333333vw;
@@ -3204,7 +3176,7 @@ html.is-desktop .nav-category {
     background: var(--referral-partner-income-calculator-range-slider-bg, #132c48)
 }
 
- .income-calculator .range-slider-input::-webkit-slider-thumb {
+mcd-income-calculator .income-calculator .range-slider-input::-webkit-slider-thumb {
     width: 5.3333333333vw;
     height: 5.3333333333vw;
     background: var(--referral-partner-income-calculator-range-slider-thumb-bg, #bba36c);
@@ -3214,14 +3186,14 @@ html.is-desktop .nav-category {
     -webkit-appearance: none
 }
 
- .income-calculator .range-slider-num {
+mcd-income-calculator .income-calculator .range-slider-num {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 2.6666666667vw
 }
 
- .bonuses-box {
+mcd-total-issued-bonuses .bonuses-box {
     display: flex;
     justify-content: flex-start;
     background-color: var(--referral-partner-content-type-light-bg, #183859);
@@ -3230,14 +3202,14 @@ html.is-desktop .nav-category {
     padding: 3.2vw
 }
 
- .bonuses-box .bonuses-type-img {
+mcd-total-issued-bonuses .bonuses-box .bonuses-type-img {
     display: inline-flex;
     width: 18.1333333333vw;
     height: 18.1333333333vw;
     margin: 0 4.8vw 0 4vw
 }
 
- .bonuses-box .bonuses-group {
+mcd-total-issued-bonuses .bonuses-box .bonuses-group {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -3245,99 +3217,99 @@ html.is-desktop .nav-category {
     justify-content: space-around
 }
 
- .bonuses-box .bonuses-group div+div {
+mcd-total-issued-bonuses .bonuses-box .bonuses-group div+div {
     margin-top: 1.0666666667vw
 }
 
- .bonuses-box .bonuses-group .bonuses-title, .bonuses-box .bonuses-group .bonuses-receive {
+mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-title,mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-receive {
     color: var(--referral-partner-bonuses-txt, #ffffff)
 }
 
- .bonuses-box .bonuses-group .bonuses-title {
+mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-title {
     font-weight: 700
 }
 
- .bonuses-box .bonuses-group .bonuses-number {
+mcd-total-issued-bonuses .bonuses-box .bonuses-group .bonuses-number {
     color: var(--referral-partner-bonuses-number-txt, rgba(255, 255, 255, .4));
     font-size: 5.8666666667vw
 }
 
- .leaderboard-box {
+mcd-leaderboard .leaderboard-box {
     background: var(--referral-partner-leaderboard-bg, linear-gradient(180deg, #183859 0%, #192243 100%));
     border-radius: .8vw;
     padding: 5.3333333333vw 2.6666666667vw;
     margin-top: 2.6666666667vw
 }
 
- .leaderboard-box li {
+mcd-leaderboard .leaderboard-box li {
     display: flex;
     align-items: center;
     font-weight: 700
 }
 
- .leaderboard-box li+li {
+mcd-leaderboard .leaderboard-box li+li {
     padding-top: 5.8666666667vw
 }
 
- .leaderboard-box li div {
+mcd-leaderboard .leaderboard-box li div {
     display: inline-flex;
     justify-content: center;
     flex-basis: 14.9333333333vw
 }
 
- .leaderboard-box li:nth-child(1) .leaderboard-top-img p {
+mcd-leaderboard .leaderboard-box li:nth-child(1) .leaderboard-top-img p {
     color: var(--referral-partner-leaderboard-first-txt, #ffb400)
 }
 
- .leaderboard-box li:nth-child(2) .leaderboard-top-img p {
+mcd-leaderboard .leaderboard-box li:nth-child(2) .leaderboard-top-img p {
     color: var(--referral-partner-leaderboard-second-txt, #c2c2c2)
 }
 
- .leaderboard-box li:nth-child(3) .leaderboard-top-img p {
+mcd-leaderboard .leaderboard-box li:nth-child(3) .leaderboard-top-img p {
     color: var(--referral-partner-leaderboard-third-txt, #c06f2f)
 }
 
- .leaderboard-box .leaderboard-top-img {
+mcd-leaderboard .leaderboard-box .leaderboard-top-img {
     flex-direction: column;
     align-items: center
 }
 
- .leaderboard-box .leaderboard-top-img img {
+mcd-leaderboard .leaderboard-box .leaderboard-top-img img {
     width: 5.3333333333vw;
     height: auto
 }
 
- .leaderboard-box .leaderboard-top-img p {
+mcd-leaderboard .leaderboard-box .leaderboard-top-img p {
     margin-top: .8vw
 }
 
- .leaderboard-box .leaderboard-icon-img {
+mcd-leaderboard .leaderboard-box .leaderboard-icon-img {
     margin: 0 5.3333333333vw
 }
 
- .leaderboard-box .leaderboard-icon-img img {
+mcd-leaderboard .leaderboard-box .leaderboard-icon-img img {
     width: 100%;
     height: auto
 }
 
- .leaderboard-box .user-id {
+mcd-leaderboard .leaderboard-box .user-id {
     width: 13.6vw;
     margin: 0 2.6666666667vw 0 0;
     justify-content: left
 }
 
- .leaderboard-box .leaderboard-number {
+mcd-leaderboard .leaderboard-box .leaderboard-number {
     justify-content: left;
     flex: 1;
     color: var(--referral-partner-bonuses-number-txt, #4574a8)
 }
 
- .who-received-bonus-box {
+mcd-bonus-received-billboard .who-received-bonus-box {
     display: flex;
     flex-direction: column
 }
 
- .who-received-bonus-box li {
+mcd-bonus-received-billboard .who-received-bonus-box li {
     display: inline-flex;
     padding: 5.3333333333vw 3.2vw;
     flex-direction: row;
@@ -3350,19 +3322,19 @@ html.is-desktop .nav-category {
     margin-top: 2.6666666667vw
 }
 
- .who-received-bonus-box li div {
+mcd-bonus-received-billboard .who-received-bonus-box li div {
     margin: 0 1.3333333333vw
 }
 
- .who-received-bonus-box .user-id, .who-received-bonus-box .received-bonus-number {
+mcd-bonus-received-billboard .who-received-bonus-box .user-id,mcd-bonus-received-billboard .who-received-bonus-box .received-bonus-number {
     color: var(--referral-partner-bonuses-list-txt-strong, #4574a8)
 }
 
- .who-received-bonus-box .text {
+mcd-bonus-received-billboard .who-received-bonus-box .text {
     color: var(--referral-partner-bonuses-list-txt, #ffffff)
 }
 
- .contact-info .contact-link img {
+mcd-contact-info .contact-info .contact-link img {
     width: 90%;
     margin: 1.3333333333vw 5% 4vw
 }
@@ -3815,13 +3787,13 @@ html.is-desktop .nav-category {
     border: 1.0666666667vw solid var(--referral-partner-bonus-goals-detail-bg, #192243)
 }
 
-.show {
+mcd-referral-success-pop .show {
     opacity: 1;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px)
 }
 
-.show .register-success-wrap {
+mcd-referral-success-pop .show .register-success-wrap {
     padding: 0;
     width: 42.6666666667vw;
     height: 42.6666666667vw;
@@ -3829,18 +3801,18 @@ html.is-desktop .nav-category {
     background-color: var(--referral-partner-pop-bg, rgba(0, 0, 0, .9))
 }
 
-.show .success-checkmark {
+mcd-referral-success-pop .show .success-checkmark {
     width: 16.2666666667vw;
     height: 21.3333333333vw
 }
 
-.show .success-checkmark .check-icon {
+mcd-referral-success-pop .show .success-checkmark .check-icon {
     width: 14.1333333333vw;
     height: 14.1333333333vw;
     border: 1.0666666667vw solid var(--referral-partner-success-check-icon-border, rgba(40, 184, 73, .5))
 }
 
-.show .success-checkmark .check-icon:after {
+mcd-referral-success-pop .show .success-checkmark .check-icon:after {
     top: 0;
     left: 8vw;
     width: 16vw;
@@ -3848,21 +3820,21 @@ html.is-desktop .nav-category {
     border-radius: 0 26.6666666667vw 26.6666666667vw x 0
 }
 
-.show .success-checkmark .check-icon:before,.show .success-checkmark .check-icon:after {
+mcd-referral-success-pop .show .success-checkmark .check-icon:before,mcd-referral-success-pop .show .success-checkmark .check-icon:after {
     background: transparent
 }
 
-.show .success-checkmark .check-icon .icon-fix {
+mcd-referral-success-pop .show .success-checkmark .check-icon .icon-fix {
     background-color: transparent
 }
 
-.show .success-checkmark .check-icon .icon-line {
+mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line {
     height: 1.3333333333vw;
     border-radius: .5333333333vw;
     background-color: var(--referral-partner-success-check-icon-color, #28b849)
 }
 
-.show .success-checkmark .check-icon .icon-line.line-tip {
+mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line.line-tip {
     top: 8vw;
     left: 2.1333333333vw;
     width: 4.8vw;
@@ -3870,7 +3842,7 @@ html.is-desktop .nav-category {
     animation: invite-partner-icon-line-tip .7s
 }
 
-.show .success-checkmark .check-icon .icon-line.line-long {
+mcd-referral-success-pop .show .success-checkmark .check-icon .icon-line.line-long {
     top: 6.6666666667vw;
     right: 1.6vw;
     width: 8.5333333333vw;
@@ -3878,7 +3850,7 @@ html.is-desktop .nav-category {
     animation: invite-partner-icon-line-long .7s
 }
 
-.show .success-checkmark .check-icon .icon-circle {
+mcd-referral-success-pop .show .success-checkmark .check-icon .icon-circle {
     top: -.5997001499vmax;
     left: -.5997001499vmax;
     width: 14.1333333333vw;
@@ -3886,25 +3858,25 @@ html.is-desktop .nav-category {
     border: transparent
 }
 
-.show .register-success-cont .top-inner h4 {
+mcd-referral-success-pop .show .register-success-cont .top-inner h4 {
     margin: 0
 }
 
- .referral-cont {
+mcd-referral-bonus-terms-conditions .referral-cont {
     font-size: 3.2vw;
     line-height: 1.2
 }
 
- .referral-cont li {
+mcd-referral-bonus-terms-conditions .referral-cont li {
     display: flex;
     color: var(--referral-partner-terms-condition-list-txt, #ffffff)
 }
 
- .referral-cont li i {
+mcd-referral-bonus-terms-conditions .referral-cont li i {
     color: var(--referral-partner-terms-condition-list-decimal, #ffffff)
 }
 
- .referral-cont li+li {
+mcd-referral-bonus-terms-conditions .referral-cont li+li {
     margin-top: 4.8vw
 }
 
@@ -26929,7 +26901,7 @@ td {
     background: #fff
 }
 
-.referral-partner  .rebate-bonus-box,.referral-partner  .achievement-bonus-block,.referral-partner  .condition-box,.referral-partner  .receive-box,.referral-partner  .recommend-friends-box,.referral-partner  .code-box {
+.referral-partner mcd-commission-info .rebate-bonus-box,.referral-partner  .achievement-bonus-block,.referral-partner  .condition-box,.referral-partner  .receive-box,.referral-partner mcd-dashboard .recommend-friends-box,.referral-partner mcd-invitation-link .code-box {
     background: #2f5580;
     border-radius: 1.3333333333vw;
     box-shadow: unset;
@@ -26943,38 +26915,38 @@ td {
     border-radius: 1.3333333333vw 1.3333333333vw 0 0
 }
 
-.referral-partner  {
+.referral-partner mcd-invitation-link {
     font-size: 3.2vw
 }
 
-.referral-partner  .code-box {
+.referral-partner mcd-invitation-link .code-box {
     position: relative
 }
 
-.referral-partner  .code-box .code {
+.referral-partner mcd-invitation-link .code-box .code {
     height: 9.3333333333vw
 }
 
-.referral-partner  .code-box .code .btn {
+.referral-partner mcd-invitation-link .code-box .code .btn {
     box-shadow: inset 0 .2666666667vw .8vw #ffffff80
 }
 
-.referral-partner  .invite-cont,.referral-partner  .invite-cont-center {
+.referral-partner mcd-invitation-link .invite-cont,.referral-partner mcd-invitation-link .invite-cont-center {
     padding: 4.8vw;
     margin: 0
 }
 
-.referral-partner  .left {
+.referral-partner mcd-invitation-link .left {
     width: 30.6666666667vw
 }
 
-.referral-partner  .invite-qr-code {
+.referral-partner mcd-invitation-link .invite-qr-code {
     padding: 1.0666666667vw;
     border-radius: 1.3333333333vw;
     border: .5333333333vw solid #90b4ef
 }
 
-.referral-partner  .qrcode {
+.referral-partner mcd-invitation-link .qrcode {
     z-index: 0;
     position: relative;
     width: 100%;
@@ -26984,18 +26956,18 @@ td {
     overflow: hidden
 }
 
-.referral-partner  .btn-share {
+.referral-partner mcd-invitation-link .btn-share {
     height: 9.3333333333vw;
     margin: auto auto 4vw 0
 }
 
-.referral-partner  .right {
+.referral-partner mcd-invitation-link .right {
     position: relative;
     width: calc(100% - 30.6666666667vw);
     margin: auto 0 auto 8.5333333333vw
 }
 
-.referral-partner  .right:before {
+.referral-partner mcd-invitation-link .right:before {
     content: "";
     position: absolute;
     display: block;
@@ -27006,7 +26978,7 @@ td {
     background: #90b4ef4d
 }
 
-.referral-partner  .recommend-friends-box {
+.referral-partner mcd-dashboard .recommend-friends-box {
     padding: 4.8vw
 }
 
@@ -27156,80 +27128,80 @@ td {
     margin-left: 1.3333333333vw
 }
 
-.referral-partner  .rebate-bonus-box {
+.referral-partner mcd-commission-info .rebate-bonus-box {
     padding: 4.8vw
 }
 
-.referral-partner  .referral-cont {
+.referral-partner mcd-commission-info .referral-cont {
     flex-direction: column
 }
 
-.referral-partner  .referral-cont .table {
+.referral-partner mcd-commission-info .referral-cont .table {
     border-color: #123356
 }
 
-.referral-partner  .referral-cont .table table {
+.referral-partner mcd-commission-info .referral-cont .table table {
     width: 100%;
     text-align: center
 }
 
-.referral-partner  .referral-cont .table table tr {
+.referral-partner mcd-commission-info .referral-cont .table table tr {
     border-bottom: transparent
 }
 
-.referral-partner  .referral-cont .table table th {
+.referral-partner mcd-commission-info .referral-cont .table table th {
     background: #3786d080;
     padding: 1.0666666667vw;
     vertical-align: middle
 }
 
-.referral-partner  .referral-cont .table table td {
+.referral-partner mcd-commission-info .referral-cont .table table td {
     background: #c4d8f8;
     color: #123356
 }
 
-.referral-partner  .referral-cont .table table th,.referral-partner  .referral-cont .table table td {
+.referral-partner mcd-commission-info .referral-cont .table table th,.referral-partner mcd-commission-info .referral-cont .table table td {
     border: 2px solid #2f5580
 }
 
-.referral-partner  img {
+.referral-partner mcd-commission-info img {
     width: 100%;
     margin-bottom: 4.2666666667vw
 }
 
-.referral-partner  .sec {
+.referral-partner mcd-commission-info .sec {
     line-height: 1.2
 }
 
-.referral-partner  .sec+.sec {
+.referral-partner mcd-commission-info .sec+.sec {
     margin-top: 6.4vw
 }
 
-.referral-partner  .sec h3 {
+.referral-partner mcd-commission-info .sec h3 {
     font-weight: 700;
     font-size: 3.7333333333vw;
     margin-bottom: 2.6666666667vw;
     color: #90b4ef
 }
 
-.referral-partner  .sec p,.referral-partner  .sec li {
+.referral-partner mcd-commission-info .sec p,.referral-partner mcd-commission-info .sec li {
     font-size: 3.2vw;
     font-weight: 400
 }
 
-.referral-partner  .sec p {
+.referral-partner mcd-commission-info .sec p {
     margin: 0
 }
 
-.referral-partner  .sec p+p {
+.referral-partner mcd-commission-info .sec p+p {
     margin-top: 2.1333333333vw
 }
 
-.referral-partner  .sec li+li {
+.referral-partner mcd-commission-info .sec li+li {
     margin-top: 2.6666666667vw
 }
 
-.referral-partner  .sec strong {
+.referral-partner mcd-commission-info .sec strong {
     display: block;
     width: 100%;
     text-align: center;
@@ -27883,6 +27855,7 @@ html.is-mobile .popup-page.show-toolbar,html.is-mobile .popup-page.show-toolbar 
     height: calc(100% - 13.0666666667vw)
 }
 
+
 .carousel-wrap {
     display: block;
     position: relative;
@@ -28184,6 +28157,7 @@ html.is-mobile .popup-page.show-toolbar,html.is-mobile .popup-page.show-toolbar 
 .carousel-wrap.debug .item .item-pic {
     border: 1px solid purple
 }
+
 
 .nav-wrap {
     overflow: hidden

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TurnoverCard from './TurnoverCard';
 import WaterfallScroll from './WaterfallScroll';
 
-const CompletedTurnover = ({ onShowDetails }) => {
+const CompletedTurnover = ({ handleViewDetails }) => {
   const [completedTurnovers, setCompletedTurnovers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -67,7 +67,7 @@ const CompletedTurnover = ({ onShowDetails }) => {
             key={turnover.id}
             turnover={turnover}
             type="completed"
-            onShowDetails={onShowDetails}
+            onClick={() => handleViewDetails(turnover)}
           />
         ))}
       </WaterfallScroll>

@@ -89,7 +89,7 @@ export const phoneVerificationService = {
 
         const response = await apiService.get('/v1/user_balance');
         console.log("User profile user_balance_update------------------------------------1:", response);
-        return await apiService.get('/v1/user_balance');
+        return await response;
     },
 
 

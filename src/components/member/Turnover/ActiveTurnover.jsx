@@ -4,7 +4,7 @@ import TurnoverCard from './TurnoverCard';
 import WaterfallScroll from './WaterfallScroll';
 import NoData from './NoData';
 
-const ActiveTurnover = ({ onShowDetails }) => {
+const ActiveTurnover = ({ handleViewDetails }) => {
   const [activeTurnovers, setActiveTurnovers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -74,7 +74,7 @@ const ActiveTurnover = ({ onShowDetails }) => {
             key={turnover.id}
             turnover={turnover}
             type="active"
-            onShowDetails={turnover => onShowDetails(turnover)}
+            onClick={() => handleViewDetails(turnover)}
           />
         ))}
       </WaterfallScroll>

@@ -13,10 +13,10 @@ const ReferBonusPopup = ({ showError, showSuccess, showWarning, showInfo }) => {
   const [yesterdayRebate, setYesterdayRebate] = useState(0);
   const [canClaimBonus, setCanClaimBonus] = useState(0);
   const [showBonusDetails, setShowBonusDetails] = useState(false);
-  
+
   const invitationCode = `${user.referralCode}`;
   const invitationUrl = `https://kingbaji.live/?ref=${user.referralCode}`;
-console.log("user", user)
+  console.log("user", user)
   const closeModal = () => {
     if (location.state?.background) {
       navigate(-1);
@@ -62,34 +62,35 @@ console.log("user", user)
 
   return (
     <>
-      <div className="tab-btn-section referral-partner-tab">
-        <div className="tab-btn tab-btn-page">
-          <div 
-            className="line" 
-            style={{ 
-              width: 'calc(50%)', 
-              transform: activeTab === 'invite' ? 'translate(0%, 0px)' : 'translate(100%, 0px)' 
-            }}
-          ></div>
-          <div
-            className={`btn ${activeTab === 'invite' ? 'active' : ''}`}
-            onClick={() => setActiveTab('invite')}
-          >
-            <div className="text">Invite</div>
-          </div>
-          <div
-            className={`btn ${activeTab === 'details' ? 'active' : ''}`}
-            onClick={() => setActiveTab('details')}
-          >
-            <div className="text">Details</div>
+      <div className="content mcd-style fixed-tab player-content">
+        <div className="tab-btn-section referral-partner-tab">
+          <div className="tab-btn tab-btn-page">
+            <div
+              className="line"
+              style={{
+                width: 'calc(50%)',
+                transform: activeTab === 'invite' ? 'translate(0%, 0px)' : 'translate(100%, 0px)'
+              }}
+            ></div>
+            <div
+              className={`btn ${activeTab === 'invite' ? 'active' : ''}`}
+              onClick={() => setActiveTab('invite')}
+            >
+              <div className="text">Invite</div>
+            </div>
+            <div
+              className={`btn ${activeTab === 'details' ? 'active' : ''}`}
+              onClick={() => setActiveTab('details')}
+            >
+              <div className="text">Details</div>
+            </div>
           </div>
         </div>
       </div>
-
       <div className="tab-content">
         {activeTab === 'invite' ? (
           <div className="referral-partner">
-            
+
             {/* Invitation Section */}
             <div className="menu-box invitation-link">
               <div className="title">
@@ -123,8 +124,8 @@ console.log("user", user)
                     <div className="bonus-title">Invitation Code</div>
                     <div className="code">
                       <span>{invitationCode}</span>
-                      <div 
-                        className="btn" 
+                      <div
+                        className="btn"
                         onClick={() => handleCopyCode(invitationCode, 'Invitation code')}
                       >
                         <img
@@ -185,7 +186,7 @@ console.log("user", user)
                   <div className="receive-bonus">
                     <div className="text">৳ {canClaimBonus}</div>
                     <div
-                    type="button"
+                      type="button"
                       className={`button ${canClaimBonus ? '' : 'btn-disabled'}`}
                       onClick={handleClaimBonus}
                     >
@@ -439,14 +440,14 @@ console.log("user", user)
                   <div className="reward-amount">Reward amount</div>
                   <div className="status">Status</div>
                 </div>
-                
+
                 {/* No Data State */}
                 <div className="no-result">
                   <div className="pic">
-                    <img 
-                      alt="no-data" 
-                      src="https://img.s628b.com/sb/h5/assets/images/no-data.png" 
-                      loading="lazy" 
+                    <img
+                      alt="no-data"
+                      src="https://img.s628b.com/sb/h5/assets/images/no-data.png"
+                      loading="lazy"
                     />
                   </div>
                   <div className="text">No Data</div>
@@ -460,12 +461,12 @@ console.log("user", user)
       {/* Bonus Details Popup */}
       {showBonusDetails && (
         <div className="cdk-overlay-container">
-          <div className="cdk-overlay-backdrop dialog-backdrop cdk-overlay-backdrop-showing" 
-               onClick={toggleBonusDetails}></div>
-          <div className="cdk-global-overlay-wrapper" dir="ltr" 
-               style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <div className="cdk-overlay-pane dialog-panel referral-reward-bonus-popup" 
-                 style={{ position: 'static' }}>
+          <div className="cdk-overlay-backdrop dialog-backdrop cdk-overlay-backdrop-showing"
+            onClick={toggleBonusDetails}></div>
+          <div className="cdk-global-overlay-wrapper" dir="ltr"
+            style={{ justifyContent: 'center', alignItems: 'center' }}>
+            <div className="cdk-overlay-pane dialog-panel referral-reward-bonus-popup"
+              style={{ position: 'static' }}>
               <div className="popup" id="dialog-1">
                 <div className="popup__header"></div>
                 <div className="popup__content">
@@ -483,8 +484,8 @@ console.log("user", user)
               </div>
             </div>
           </div>
-          <div className="pop-bg ng-trigger ng-trigger-popBgTriggerAni" 
-               style={{ display: 'block' }}></div>
+          <div className="pop-bg ng-trigger ng-trigger-popBgTriggerAni"
+            style={{ display: 'block' }}></div>
         </div>
       )}
     </>

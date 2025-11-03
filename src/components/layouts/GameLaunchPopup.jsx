@@ -1,5 +1,6 @@
 // components/layouts/GameLaunchPopup.jsx
 import React, { useEffect, useState } from 'react';
+import { useApp } from '../../contexts/AppContext';
 
 const GameLaunchPopup = ({
   show = false,
@@ -12,6 +13,7 @@ const GameLaunchPopup = ({
 }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
+  const { handleRefresh } = useApp();
 console.log('Launch game API response:', gameUrl);
   useEffect(() => {
     if (show) {
@@ -31,6 +33,7 @@ console.log('Launch game API response:', gameUrl);
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget && onClose) {
       onClose();
+      handleRefresh();
     }
   };
 

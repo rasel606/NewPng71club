@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import Header from "../Header/Header";
+import Header from "../common/Header/Header";
 import PlayerToolbar from "../common/Toolbar/PlayerToolbar";
 import GuestToolbar from "../common/Toolbar/GuestToolbar";
 import Footer from "../Footer/Footer";
@@ -8,6 +8,7 @@ import { useAuth } from "../../contexts/AuthContext";
 
 export default function RootLayout() {
     const { isAuthenticated, loading } = useAuth();
+    
   const [isMemberMenuOpen, setIsMemberMenuOpen] = useState(false);
   
   return (

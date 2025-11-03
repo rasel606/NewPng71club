@@ -15,7 +15,7 @@ import { gameCategories } from '../../data/games';
 import ScrollBanner from '../banners/ScrollBanner/ScrollBanner';
 import FeatureGames from '../banners/FeatureGames/FeatureGames';
 
-const HomePage = () => {
+const HomePage = ({ showError, showSuccess }) => {
   const [activeCategory, setActiveCategory] = useState(gameCategories[0]);
   const { currentIndex, goToSlide } = useCarousel(banners.length, 3000);
   const { execute: executeLoadGames } = useApi();
@@ -82,27 +82,18 @@ const HomePage = () => {
 
       <div className="main-content">
         <Carousel
-           items={carouselItems}
+          items={carouselItems}
         autoPlay={true}
-        delay={5000}
+        delay={3000}
+        showDots={true}
+        showArrows={false}
+        showError={showError}
+         showSuccess={showSuccess}
         />
 
         <Announcement text={announcement} />
+          <GameNavigation/>
 
-        {/* {loading ? (
-          <div className="loading-container">
-            <LoadingSpinner text="গেমস লোড হচ্ছে..." />
-          </div>
-        ) : ( */}
-          <GameNavigation
-            // categories={gameCategories}
-            // activeCategory={activeCategory}
-            // onCategoryChange={handleCategoryChange}
-            // games={games}
-          />
-        {/* )} */}
-
-        {/* <PromoBanner banners={promoBanners} /> */}
         <FeatureGames></FeatureGames>
         <ScrollBanner/>
         

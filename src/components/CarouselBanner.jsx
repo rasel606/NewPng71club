@@ -1,41 +1,104 @@
 // components/CarouselBanner.js
 import React, { useState, useEffect } from 'react';
 
-const CarouselBanner = ({ items }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const CarouselBanner = ({
+ // Image props
+  bannerImage = "https://img.s628b.com/upload/footerH5FloatBanner/image_293452.gif",
+  bannerAlt = "float-banner",
+  width = 250,
+  height = 250,
+  aspectRatio = "250 / 250",
+  
+  // Position props
+  position = "bottom-right", // 'bottom-right', 'bottom-left', 'top-right', 'top-left', 'center-right', 'center-left'
+  
+  // Animation props
+  animation = "none", // 'none', 'bounce', 'pulse', 'slide-in'
+  delay = 0, // Delay in milliseconds before showing
+  
+  // Behavior props
+  showCloseButton = true,
+  autoClose = false,
+  autoCloseDelay = 5000, // in milliseconds
+  onClose,
+  onClick,
+  
+  // Style props
+  className = "",
+  customStyles = {},
+  closeButtonStyles = {}
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 5000);
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
 
-    return () => clearInterval(interval);
-  }, [items.length]);
+    return () => clearTimeout(timer);
+  }, [delay]);
+
+  React.useEffect(() => {
+    if (autoClose && isVisible) {
+      const timer = setTimeout(() => {
+        handleClose();
+      }, autoCloseDelay);
+
+      return () => clearTimeout(timer);
+    }
+  }, [autoClose, autoCloseDelay, isVisible]);
+
+  const handleClose = () => {
+    setIsVisible(false);
+    if (onClose) {
+      onClose();
+    }
+  };
+
+  const handleBannerClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
+  if (!isVisible) {
+    return null;
+  }
+
+  const positionClass = `position-${position}`;
+  const animationClass = animation !== 'none' ? `animation-${animation}` : '';
 
   return (
-    <div className="banner">
-      <div className="banner-v1">
-        <div className="carousel-wrap style-init mcd siblings" data-auto="true" data-delay="500">
-          <div className="cdk-drag item-drag" style={{ transform: `translate3d(-${currentIndex * 100}%, 0px, 0px)` }}>
-            <div className="item-left">
-              <div className="item-wrap">
-                {items.map((item, index) => (
-                  <div key={item.id} className="item" idx={index} message-id={item.messageId}>
-                    <div className="item-pic" style={{ backgroundImage: `url(${item.image})` }}></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <ul className="dot-group style-bar">
-          {items.map((item, index) => (
-            <li key={item.id} href="#" value="3" idx={index} className={index === currentIndex ? 'active' : ''}>
-              <span className="dot-progress" style={{ animationDuration: '3000ms' }}></span>
-            </li>
-          ))}
-        </ul>
+    <div 
+      className={`mcd-float-banner ${positionClass} ${className}`}
+      style={customStyles}
+    >
+      <div className={`float-banner ng-trigger ng-trigger-popWrapTriggerAni ${animationClass}`}>
+        {showCloseButton && (
+          <a 
+            className="close" 
+            onClick={handleClose}
+            style={{ 
+              cursor: 'pointer',
+              ...closeButtonStyles
+            }}
+            aria-label="Close banner"
+          ></a>
+        )}
+        <img 
+          className="banner-image"
+          alt={bannerAlt}
+          src={bannerImage}
+          loading="lazy"
+          style={{ 
+            aspectRatio: aspectRatio,
+            width: `${width}px`,
+            height: `${height}px`
+          }}
+          width={width}
+          height={height}
+          onClick={handleBannerClick}
+        />
       </div>
     </div>
   );

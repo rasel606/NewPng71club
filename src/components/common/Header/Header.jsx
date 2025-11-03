@@ -1,10 +1,32 @@
-﻿import React from 'react';
-import { useAuth } from '../../context/AuthContext';
-import { useApp } from '../../context/AppContext';
 
-const Header = ({ type = 'normal', title, onBack, onMenu }) => {
+
+import React from 'react';
+import { useAuth } from '../../../contexts/AuthContext';
+import { useApp } from '../../../contexts/AppContext';
+import { usePopup } from '../../layouts/PopupManager';
+import SideMenu from '../SideMenu/SideMenu';
+
+
+const Header = ({ type = 'normal', title, onBack }) => {
   const { user, isAuthenticated } = useAuth();
+  const { openPopup, closePopup } = usePopup();
   const { walletBalance } = useApp();
+
+  const handleOpenMenu = () => {
+    openPopup(
+      <SideMenu onClose={closePopup} />,
+      {
+        contentClass: "menu", // Fixed: changed from "manu" to "memu"
+        size: "fullscreen",
+        position: "left",
+        closeOnBackdrop: true,
+        closeOnEscape: true,
+        showBackdrop: true
+      }
+    );
+  };
+
+  console.log("walletBalance", openPopup, closePopup, walletBalance);
 
   if (type === 'promotion') {
     return (
@@ -26,10 +48,10 @@ const Header = ({ type = 'normal', title, onBack, onMenu }) => {
   }
 
   return (
-    <header className="header normal">
-      <div className="header-left-btn-group">
-        <div className="back-btn" onClick={onBack}></div>
-        <div className="menu-btn" onClick={onMenu}>
+    <header className="header normal"  >
+      <div className="header-left-btn-group" onClick={handleOpenMenu}>
+        {/* <div className="back-btn" onClick={onBack}></div> */}
+        <div className="menu-btn">
           <ul>
             <li></li>
             <li></li>

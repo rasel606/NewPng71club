@@ -1,13 +1,42 @@
 // hooks/useGamePlay.js
 import { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import phoneVerificationService from '../services/phoneVerificationService';
+import { useApp } from '../contexts/AppContext';
 export const useGamePlay = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [playGameData, setPlayGameData] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
   const { userId, setIsLoginNotify } = useAuth();
+  const { handleRefresh } = useApp();
+
+
+
+
+  // const [userBalance, setUserBalance] = useState(0);
+  // const [refreshing, setRefreshing] = useState(false);
+
+  //   const handleRefresh = async () => {
+  //     if (refreshing) return;
+  //     setRefreshing(true);
+  
+  //     try {
+  //       const response = await phoneVerificationService.user_balance_update();
+  //       setUserBalance(response.balance);
+  //       console.log("Balance Data updated:", response.balance);
+  //     } catch (error) {
+  //       console.error("Error fetching balance:", error);
+  //     } finally {
+  //       setTimeout(() => setRefreshing(false), 1000);
+  //     }
+  //   };
+
+
+
+
 
   const handlePlay = async (game) => {
+    handleRefresh(userId);
     if (isPlaying) return;
 
     setIsPlaying(true);
@@ -48,9 +77,14 @@ export const useGamePlay = () => {
     }
   };
 
+  
+
   const handleClosePopup = () => {
+    handleRefresh();
     setShowPopup(false);
     setPlayGameData(null);
+    
+    isPlaying(false);
   };
 
   return {
